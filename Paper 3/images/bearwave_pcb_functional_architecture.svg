@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1200" viewBox="0 0 2200 1200">
+  <defs>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#b34336"/>
+    </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#245b91"/>
+    </marker>
+    <marker id="arrow-ochre" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#8c6b1f"/>
+    </marker>
+    <style>
+      .page { fill: #ffffff; }
+      .block { stroke: #2f3a45; stroke-width: 3; rx: 18; ry: 18; }
+      .sensor { fill: #fff4d6; }
+      .power { fill: #fdecea; }
+      .controller { fill: #e6f1ff; }
+      .compute { fill: #edf7ed; }
+      .timing { fill: #f0ecff; }
+      .io { fill: #eef3f6; }
+      .legend { fill: #f8fafc; stroke: #bac8d6; stroke-width: 2; rx: 14; ry: 14; }
+      .text { font-family: Arial, Helvetica, sans-serif; fill: #17212b; }
+      .title { font-size: 42px; font-weight: 700; }
+      .subtitle { font-size: 25px; fill: #4a5a6a; }
+      .label { font-size: 30px; font-weight: 700; }
+      .small { font-size: 25px; }
+      .tiny { font-size: 22px; fill: #34495e; }
+      .power-line { fill: none; stroke: #b34336; stroke-width: 5; marker-end: url(#arrow-red); }
+      .data-line { fill: none; stroke: #245b91; stroke-width: 5; marker-end: url(#arrow-blue); }
+      .sense-line { fill: none; stroke: #8c6b1f; stroke-width: 5; marker-end: url(#arrow-ochre); }
+      .dash-line { fill: none; stroke: #245b91; stroke-width: 5; stroke-dasharray: 14 10; marker-end: url(#arrow-blue); }
+      .tag { fill: #ffffff; opacity: 0.94; rx: 10; ry: 10; }
+    </style>
+  </defs>
+
+  <rect class="page" width="2200" height="1200"/>
+  <text class="text title" x="90" y="78">Remote-node PCB functional architecture</text>
+  <text class="text subtitle" x="90" y="116">PCB-level view of sensing, timing, supervision, processing, switched power, and external interfaces</text>
+
+  <rect class="block sensor" x="90" y="210" width="330" height="125"/>
+  <text class="text label" x="255" y="258" text-anchor="middle">Trap switch inputs</text>
+  <text class="text small" x="255" y="296" text-anchor="middle">two pull-up digital inputs</text>
+  <text class="text small" x="255" y="326" text-anchor="middle">external trigger state</text>
+
+  <rect class="block sensor" x="90" y="400" width="330" height="135"/>
+  <text class="text label" x="255" y="448" text-anchor="middle">Local LoRa sensors</text>
+  <text class="text small" x="255" y="486" text-anchor="middle">nearby environmental and</text>
+  <text class="text small" x="255" y="516" text-anchor="middle">equipment-health inputs</text>
+
+  <rect class="block sensor" x="90" y="600" width="330" height="125"/>
+  <text class="text label" x="255" y="648" text-anchor="middle">Battery monitor</text>
+  <text class="text small" x="255" y="686" text-anchor="middle">protected rail divider</text>
+  <text class="text small" x="255" y="716" text-anchor="middle">ADC measurement</text>
+
+  <rect class="block timing" x="90" y="790" width="330" height="125"/>
+  <text class="text label" x="255" y="838" text-anchor="middle">RTC and GPS</text>
+  <text class="text small" x="255" y="876" text-anchor="middle">time, location, wake context</text>
+  <text class="text small" x="255" y="906" text-anchor="middle">backup time support</text>
+
+  <rect class="block controller" x="760" y="360" width="430" height="255"/>
+  <text class="text label" x="975" y="414" text-anchor="middle">Heltec WiFi LoRa 32 V3</text>
+  <text class="text small" x="975" y="456" text-anchor="middle">low-power supervisor</text>
+  <text class="text small" x="975" y="496" text-anchor="middle">event latch | rail control</text>
+  <text class="text small" x="975" y="532" text-anchor="middle">UART state interface</text>
+  <text class="text small" x="975" y="568" text-anchor="middle">local LoRa ingress</text>
+
+  <rect class="block power" x="675" y="770" width="600" height="190"/>
+  <text class="text label" x="975" y="824" text-anchor="middle">Power management</text>
+  <text class="text small" x="975" y="866" text-anchor="middle">fuse and reverse-polarity protection</text>
+  <text class="text small" x="975" y="902" text-anchor="middle">latched rail-enable logic</text>
+  <text class="text small" x="975" y="938" text-anchor="middle">switched 5 V and 12 V regulator modules</text>
+
+  <rect class="block sensor" x="1510" y="90" width="420" height="125"/>
+  <text class="text label" x="1720" y="138" text-anchor="middle">Camera module</text>
+  <text class="text small" x="1720" y="176" text-anchor="middle">alarm still-image capture</text>
+  <text class="text small" x="1720" y="206" text-anchor="middle">SSTV evidence source</text>
+
+  <rect class="block compute" x="1510" y="245" width="420" height="155"/>
+  <text class="text label" x="1720" y="298" text-anchor="middle">Raspberry Pi Zero 2 W</text>
+  <text class="text small" x="1720" y="334" text-anchor="middle">Linux application layer</text>
+  <text class="text small" x="1720" y="368" text-anchor="middle">messages and image capture</text>
+  <text class="text small" x="1720" y="394" text-anchor="middle">radio control</text>
+
+  <rect class="block compute" x="1510" y="505" width="420" height="155"/>
+  <text class="text label" x="1720" y="558" text-anchor="middle">QDX + modified ATU100</text>
+  <text class="text small" x="1720" y="600" text-anchor="middle">external HF radio and tuner path</text>
+  <text class="text small" x="1720" y="636" text-anchor="middle">inverted-V antenna connection</text>
+
+  <rect class="block io" x="1510" y="765" width="420" height="155"/>
+  <text class="text label" x="1720" y="818" text-anchor="middle">External I/O headers</text>
+  <text class="text small" x="1720" y="860" text-anchor="middle">USB, GPIO, SPI, I2C, UART</text>
+  <text class="text small" x="1720" y="896" text-anchor="middle">pogo pads and expansion points</text>
+
+  <path class="sense-line" d="M 420 272 C 530 272 620 372 760 425"/>
+  <rect class="tag" x="520" y="255" width="165" height="34"/>
+  <text class="text tiny" x="602" y="279" text-anchor="middle">GPIO trigger</text>
+
+  <path class="sense-line" d="M 420 467 C 550 467 620 480 760 488"/>
+  <rect class="tag" x="535" y="445" width="150" height="34"/>
+  <text class="text tiny" x="610" y="469" text-anchor="middle">LoRa packets</text>
+
+  <path class="sense-line" d="M 420 662 C 550 662 665 580 760 535"/>
+  <rect class="tag" x="530" y="630" width="138" height="34"/>
+  <text class="text tiny" x="599" y="654" text-anchor="middle">ADC value</text>
+
+  <path class="sense-line" d="M 420 852 C 585 852 690 610 760 565"/>
+  <rect class="tag" x="500" y="770" width="150" height="34"/>
+  <text class="text tiny" x="575" y="794" text-anchor="middle">I2C / UART</text>
+
+  <path class="dash-line" d="M 975 615 L 975 770"/>
+  <rect class="tag" x="818" y="670" width="314" height="36"/>
+  <text class="text tiny" x="975" y="695" text-anchor="middle">rail-enable pulses and status</text>
+
+  <path class="power-line" d="M 1275 820 C 1378 820 1428 325 1510 322"/>
+  <rect class="tag" x="1318" y="748" width="152" height="34"/>
+  <text class="text tiny" x="1394" y="772" text-anchor="middle">switched 5 V</text>
+
+  <path class="power-line" d="M 1275 890 C 1380 890 1425 590 1510 584"/>
+  <rect class="tag" x="1320" y="858" width="180" height="34"/>
+  <text class="text tiny" x="1410" y="882" text-anchor="middle">switched 12 V</text>
+
+  <path class="power-line" d="M 1275 930 C 1375 960 1420 872 1510 850"/>
+  <rect class="tag" x="1312" y="954" width="222" height="34"/>
+  <text class="text tiny" x="1423" y="978" text-anchor="middle">protected / service rails</text>
+
+  <path class="data-line" d="M 1190 442 C 1325 390 1390 325 1510 323"/>
+  <rect class="tag" x="1250" y="350" width="205" height="34"/>
+  <text class="text tiny" x="1352" y="374" text-anchor="middle">UART / I2C / GPIO</text>
+
+  <path class="data-line" d="M 1720 215 L 1720 245"/>
+  <rect class="tag" x="1760" y="218" width="148" height="34"/>
+  <text class="text tiny" x="1834" y="242" text-anchor="middle">CSI camera</text>
+
+  <path class="data-line" d="M 1190 538 C 1338 575 1378 584 1510 584"/>
+  <rect class="tag" x="1260" y="520" width="204" height="34"/>
+  <text class="text tiny" x="1362" y="544" text-anchor="middle">radio control path</text>
+
+  <path class="data-line" d="M 1190 586 C 1335 700 1395 800 1510 842"/>
+  <rect class="tag" x="1255" y="680" width="218" height="34"/>
+  <text class="text tiny" x="1364" y="704" text-anchor="middle">expansion interfaces</text>
+
+  <rect class="legend" x="90" y="1030" width="2040" height="95"/>
+  <line x1="125" y1="1064" x2="210" y2="1064" class="power-line"/>
+  <text class="text tiny" x="230" y="1072">Power distribution and switched rails</text>
+  <line x1="650" y1="1064" x2="735" y2="1064" class="data-line"/>
+  <text class="text tiny" x="755" y="1072">Digital control and data interfaces</text>
+  <line x1="1160" y1="1064" x2="1245" y2="1064" class="sense-line"/>
+  <text class="text tiny" x="1265" y="1072">Sensed analogue, timing, or trigger inputs</text>
+  <text class="text tiny" x="125" y="1105">The Heltec module remains the low-power supervisory layer, enabling higher-power compute, radio, and external loads only when required.</text>
+</svg>

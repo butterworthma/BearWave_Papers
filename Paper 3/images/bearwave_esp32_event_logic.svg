@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1100" viewBox="0 0 1800 1100">
+  <defs>
+    <style>
+      .title { font: 700 34px Arial, Helvetica, sans-serif; fill: #12233f; }
+      .subtitle { font: 22px Arial, Helvetica, sans-serif; fill: #555; }
+      .box-title { font: 700 27px Arial, Helvetica, sans-serif; fill: #1a1a1a; }
+      .box-text { font: 25px Arial, Helvetica, sans-serif; fill: #1a1a1a; }
+      .label { font: 20px Arial, Helvetica, sans-serif; fill: #444; }
+      .note { font: 22px Arial, Helvetica, sans-serif; fill: #444; }
+      .idle { fill: #e8f2ff; stroke: #222; stroke-width: 1.5; }
+      .active { fill: #fff0df; stroke: #222; stroke-width: 1.5; }
+      .reported { fill: #f8f4df; stroke: #222; stroke-width: 1.5; }
+      .clear { fill: #e9f6ea; stroke: #222; stroke-width: 1.5; }
+      .arrow { fill: none; stroke: #444; stroke-width: 4; marker-end: url(#arrowhead); }
+      .return { fill: none; stroke: #666; stroke-width: 3; marker-end: url(#arrowhead-muted); }
+    </style>
+    <marker id="arrowhead" markerWidth="14" markerHeight="12" refX="13" refY="6" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 14 6 L 0 12 z" fill="#444"/>
+    </marker>
+    <marker id="arrowhead-muted" markerWidth="14" markerHeight="12" refX="13" refY="6" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 14 6 L 0 12 z" fill="#666"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1800" height="1100" fill="#fff"/>
+  <text class="title" x="60" y="72">BearWave ESP32 Event Logic</text>
+  <text class="subtitle" x="60" y="108">State transitions for trap and low-battery presentation to the Raspberry Pi</text>
+
+  <!-- Idle state -->
+  <rect class="idle" x="80" y="430" width="360" height="160" rx="18"/>
+  <text class="box-title" x="260" y="500" text-anchor="middle">Idle / Re-armed</text>
+  <text class="box-title" x="260" y="536" text-anchor="middle">EVENT,NONE</text>
+
+  <!-- Trap path -->
+  <rect class="active" x="610" y="205" width="440" height="185" rx="16"/>
+  <text class="box-text" x="830" y="262" text-anchor="middle">Trap detected</text>
+  <text class="box-text" x="830" y="300" text-anchor="middle">Set trapLatched = true</text>
+  <text class="box-text" x="830" y="338" text-anchor="middle">Offer EVENT,TRAP</text>
+  <text class="box-text" x="830" y="376" text-anchor="middle">until reported</text>
+
+  <rect class="reported" x="1160" y="205" width="420" height="185" rx="16"/>
+  <text class="box-text" x="1370" y="262" text-anchor="middle">Trap reported</text>
+  <text class="box-text" x="1370" y="300" text-anchor="middle">Pi sends</text>
+  <text class="box-text" x="1370" y="338" text-anchor="middle">EVENT_ACKED,TRAP</text>
+  <text class="box-text" x="1370" y="376" text-anchor="middle">No repeat until reset</text>
+
+  <!-- Low-battery path -->
+  <rect class="active" x="610" y="685" width="440" height="205" rx="16"/>
+  <text class="box-text" x="830" y="742" text-anchor="middle">Low battery asserted</text>
+  <text class="box-text" x="830" y="780" text-anchor="middle">Set lowBatteryActive = true</text>
+  <text class="box-text" x="830" y="818" text-anchor="middle">Offer EVENT,LOW_BAT</text>
+  <text class="box-text" x="830" y="856" text-anchor="middle">until reported</text>
+
+  <rect class="reported" x="1160" y="685" width="420" height="205" rx="16"/>
+  <text class="box-text" x="1370" y="742" text-anchor="middle">Low battery reported</text>
+  <text class="box-text" x="1370" y="780" text-anchor="middle">Pi sends</text>
+  <text class="box-text" x="1370" y="818" text-anchor="middle">EVENT_ACKED,LOW_BAT</text>
+  <text class="box-text" x="1370" y="856" text-anchor="middle">No repeat while</text>
+  <text class="box-text" x="1370" y="884" text-anchor="middle">below clear threshold</text>
+
+  <!-- Clear state -->
+  <rect class="clear" x="1610" y="430" width="150" height="230" rx="16"/>
+  <text class="box-text" x="1685" y="492" text-anchor="middle">Clear</text>
+  <text class="box-text" x="1685" y="530" text-anchor="middle">and</text>
+  <text class="box-text" x="1685" y="568" text-anchor="middle">re-arm</text>
+  <text class="label" x="1685" y="612" text-anchor="middle">trap reset</text>
+  <text class="label" x="1685" y="638" text-anchor="middle">or battery OK</text>
+
+  <!-- Forward transitions -->
+  <path class="arrow" d="M 440 475 C 515 475 535 300 610 300"/>
+  <text class="label" x="505" y="332" text-anchor="middle">trap input active</text>
+
+  <path class="arrow" d="M 440 545 C 515 545 535 785 610 785"/>
+  <text class="label" x="505" y="735" text-anchor="middle">battery at</text>
+  <text class="label" x="505" y="760" text-anchor="middle">assert threshold</text>
+
+  <path class="arrow" d="M 1050 298 L 1160 298"/>
+  <text class="label" x="1105" y="252" text-anchor="middle">Pi success</text>
+  <text class="label" x="1105" y="277" text-anchor="middle">and valid ACK</text>
+
+  <path class="arrow" d="M 1050 788 L 1160 788"/>
+  <text class="label" x="1105" y="742" text-anchor="middle">Pi success</text>
+  <text class="label" x="1105" y="767" text-anchor="middle">and valid ACK</text>
+
+  <path class="arrow" d="M 1580 298 C 1655 298 1668 360 1685 430"/>
+  <text class="label" x="1662" y="274" text-anchor="middle">physical trap reset</text>
+
+  <path class="arrow" d="M 1580 788 C 1655 788 1668 730 1685 660"/>
+  <text class="label" x="1664" y="820" text-anchor="middle">battery recovers</text>
+
+  <!-- Return to idle -->
+  <path class="return" d="M 1685 660 L 1685 980 L 260 980 L 260 590"/>
+  <text class="note" x="900" y="1015" text-anchor="middle">Re-arm only after the physical trigger clears or the battery rises above the clear threshold</text>
+</svg>

@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="980" viewBox="0 0 1800 980">
+  <defs>
+    <style>
+      .title { font: 700 42px Arial, Helvetica, sans-serif; fill: #142a4a; }
+      .subtitle { font: 23px Arial, Helvetica, sans-serif; fill: #555; }
+      .lane-title { font: 700 25px Arial, Helvetica, sans-serif; fill: #142a4a; }
+      .box-title { font: 700 28px Arial, Helvetica, sans-serif; fill: #1b1b1b; }
+      .box-text { font: 23px Arial, Helvetica, sans-serif; fill: #1b1b1b; }
+      .label { font: 20px Arial, Helvetica, sans-serif; fill: #444; }
+      .small { font: 20px Arial, Helvetica, sans-serif; fill: #555; }
+      .box { stroke-width: 2.4; rx: 18; ry: 18; }
+      .healthy { fill: #eef8ef; stroke: #6ca36f; }
+      .warning { fill: #fff8e8; stroke: #8d7a52; }
+      .critical { fill: #ffeef0; stroke: #a84b59; }
+      .normal { fill: #e8f2ff; stroke: #7b9cc8; }
+      .alert { fill: #fff3e6; stroke: #c08c58; }
+      .ack { fill: #f0ebfb; stroke: #8e78b5; }
+      .note { fill: #f8fafc; stroke: #8ba7c8; stroke-width: 2; rx: 16; ry: 16; }
+      .arrow { fill: none; stroke: #444; stroke-width: 3.2; marker-end: url(#arrowhead); }
+      .reset { fill: none; stroke: #245b91; stroke-width: 3.2; stroke-dasharray: 11 8; marker-end: url(#arrowhead-blue); }
+      .pill { fill: #fff; stroke: #aaa; stroke-width: 1; }
+    </style>
+    <marker id="arrowhead" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 13 5.5 L 0 11 z" fill="#444"/>
+    </marker>
+    <marker id="arrowhead-blue" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 13 5.5 L 0 11 z" fill="#245b91"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1800" height="980" fill="#fff"/>
+  <text class="title" x="60" y="70">Control Node Health and Alert-State Model</text>
+  <text class="subtitle" x="60" y="108">Dashboard state derived from BearWave message timing and alarm-bearing payloads</text>
+
+  <text class="lane-title" x="80" y="175">Node health from last-heard age</text>
+
+  <rect class="box normal" x="80" y="215" width="300" height="135" rx="18"/>
+  <text class="box-title" x="230" y="270" text-anchor="middle">Valid message</text>
+  <text class="box-text" x="230" y="305" text-anchor="middle">update node state and</text>
+  <text class="box-text" x="230" y="335" text-anchor="middle">last-heard timestamp</text>
+
+  <rect class="box healthy" x="470" y="215" width="320" height="135" rx="18"/>
+  <text class="box-title" x="630" y="270" text-anchor="middle">Green</text>
+  <text class="box-text" x="630" y="305" text-anchor="middle">within heartbeat</text>
+  <text class="box-text" x="630" y="335" text-anchor="middle">interval plus grace</text>
+
+  <rect class="box warning" x="900" y="215" width="320" height="135" rx="18"/>
+  <text class="box-title" x="1060" y="270" text-anchor="middle">Yellow</text>
+  <text class="box-text" x="1060" y="305" text-anchor="middle">one expected</text>
+  <text class="box-text" x="1060" y="335" text-anchor="middle">heartbeat slot missed</text>
+
+  <rect class="box critical" x="1330" y="215" width="360" height="135" rx="18"/>
+  <text class="box-title" x="1510" y="270" text-anchor="middle">Red</text>
+  <text class="box-text" x="1510" y="305" text-anchor="middle">two or more expected</text>
+  <text class="box-text" x="1510" y="335" text-anchor="middle">heartbeat slots missed</text>
+
+  <path class="arrow" d="M 380 282 L 470 282"/>
+  <path class="arrow" d="M 790 282 L 900 282"/>
+  <rect class="pill" x="810" y="243" width="78" height="30" rx="8"/>
+  <text class="label" x="849" y="265" text-anchor="middle">age</text>
+  <text class="label" x="850" y="386" text-anchor="middle">age &gt;= heartbeat interval + grace</text>
+
+  <path class="arrow" d="M 1220 282 L 1330 282"/>
+  <rect class="pill" x="1240" y="243" width="78" height="30" rx="8"/>
+  <text class="label" x="1279" y="265" text-anchor="middle">age</text>
+  <text class="label" x="1275" y="386" text-anchor="middle">age &gt;= two heartbeat intervals</text>
+
+  <path class="reset" d="M 1510 215 C 1360 145 760 145 630 215"/>
+  <text class="label" x="1070" y="146" text-anchor="middle">next valid message resets health timer</text>
+
+  <line x1="80" y1="450" x2="1690" y2="450" stroke="#d6dee8" stroke-width="2"/>
+
+  <text class="lane-title" x="80" y="520">Alert state from alarm messages and operator action</text>
+
+  <rect class="box normal" x="80" y="560" width="320" height="140" rx="18"/>
+  <text class="box-title" x="240" y="615" text-anchor="middle">No active alert</text>
+  <text class="box-text" x="240" y="650" text-anchor="middle">dashboard shows normal</text>
+  <text class="box-text" x="240" y="680" text-anchor="middle">presentation state</text>
+
+  <rect class="box alert" x="520" y="560" width="360" height="140" rx="18"/>
+  <text class="box-title" x="700" y="615" text-anchor="middle">Alarm active</text>
+  <text class="box-text" x="700" y="650" text-anchor="middle">trap, low-battery, or</text>
+  <text class="box-text" x="700" y="680" text-anchor="middle">LoRa sensor alarm received</text>
+
+  <rect class="box ack" x="1010" y="560" width="385" height="140" rx="18"/>
+  <text class="box-title" x="1202" y="615" text-anchor="middle">Alarm acknowledged</text>
+  <text class="box-text" x="1202" y="650" text-anchor="middle">operator has acknowledged</text>
+  <text class="box-text" x="1202" y="680" text-anchor="middle">the local alert display</text>
+
+  <rect class="box healthy" x="1510" y="560" width="180" height="140" rx="18"/>
+  <text class="box-title" x="1600" y="615" text-anchor="middle">Clear</text>
+  <text class="box-text" x="1600" y="650" text-anchor="middle">condition</text>
+  <text class="box-text" x="1600" y="680" text-anchor="middle">resolved</text>
+
+  <path class="arrow" d="M 400 630 L 520 630"/>
+  <text class="label" x="460" y="602" text-anchor="middle">alarm payload</text>
+
+  <path class="arrow" d="M 880 630 L 1010 630"/>
+  <text class="label" x="945" y="602" text-anchor="middle">operator ack</text>
+
+  <path class="arrow" d="M 1395 630 L 1510 630"/>
+  <text class="label" x="1452" y="602" text-anchor="middle">clears</text>
+
+  <path class="reset" d="M 1600 700 C 1470 805 360 805 240 700"/>
+  <text class="label" x="920" y="842" text-anchor="middle">resolved or reset alert returns the dashboard to the no-active-alert state</text>
+
+  <rect class="note" x="170" y="880" width="1460" height="60" rx="16"/>
+  <text class="small" x="900" y="918" text-anchor="middle">Health colour and alert state are combined on the dashboard: a node can be green with an active alarm, or red because heartbeats have been missed.</text>
+</svg>

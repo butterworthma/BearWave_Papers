@@ -1,0 +1,64 @@
+# Generated charts and outputs
+*.png
+*.jpg
+*.jpeg
+*.pdf
+
+# Exception: Include the comprehensive stacked charts
+!All_foF2_Charts_Stacked_Columns_2017-2023.png
+
+# Exception: Include paper figures (Figs 10, 14, 15)
+!output/5_GHz_1_W_-9.7_dB_+-6.4_2023-04-18_to_2023-04-19_28h_16m.png
+!output/7.078_MHz_5_W_-0.0_dB_+-0.4_2023-04-18_9h_9m.png
+!output/10.130_MHz_-12.1_dB_+-5.6_2023-04-20_15h_10m.png
+
+# Data files (too large/sensitive for git)
+*.xlsx
+*.xls
+*.csv
+
+# Exception: Include essential data files for repository functionality
+!data/NVIS_data.xlsx
+!data/5_GHZ_Standardized_data_preview__first_200_rows_.csv
+!data/7_1_MHz_Standardized_data.xlsx
+!data/10_130_MHz_Standardized_data.xlsx
+!data/cpu_temperature_data.xlsx
+!data/Complete_NVIS_data.xlsx
+
+# Output directories
+output/
+test/
+test2/
+corrected/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# User-specific paths
+**/Desktop/**
+**/Users/**
+
+# Temporary files
+*.tmp
+*.temp
+*.log

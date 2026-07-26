@@ -1,0 +1,104 @@
+██████╗ ███████╗ █████╗ ██████╗ ██╗    ██╗ █████╗ ██╗   ██╗███████╗
+██╔══██╗██╔════╝██╔══██╗██╔══██╗██║    ██║██╔══██╗██║   ██║██╔════╝
+██████╔╝█████╗  ███████║██████╔╝██║ █╗ ██║███████║██║   ██║█████╗  
+██╔══██╗██╔══╝  ██╔══██║██╔══██╗██║███╗██║██╔══██║╚██╗ ██╔╝██╔══╝  
+██████╔╝███████╗██║  ██║██║  ██║╚███╔███╔╝██║  ██║ ╚████╔╝ ███████╗
+╚═════╝ ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚══╝╚══╝ ╚═╝  ╚═╝  ╚═══╝  ╚══════╝
+
+  🌿 EVALUATING NVIS FOR REMOTE WILDLIFE MONITORING 🌿
+    🌳 A FIELD TRIAL IN THE BORNEO RAINFOREST 🌳
+
+                    ╭─────────────────────────────────╮
+                    │    📡 IONOSPHERIC MONITORING    │
+                    ╰─────────────────────────────────╯
+                              ┌─────────────┐
+                              │   GUAM 🇺🇸   │
+                              │ 13.44°N     │
+                              │ 144.79°E    │
+                              └─────────────┘
+                                     │
+                    ╭────────────────┼────────────────╮
+                    │                │                │
+              ┌─────────────┐  ┌─────────────┐  ┌─────────────┐
+              │   DARWIN    │  │ IONOSPHERE  │  │    DGFC     │
+              │   🇦🇺 12.46°S │  │     F2      │  │ 🇲🇾 5.41°N  │
+              │   130.84°E  │  │    LAYER    │  │  118.04°E   │
+              └─────────────┘  └─────────────┘  └─────────────┘
+
+    ╭─────────────────────────────────────────────────────────────╮
+    │                    📊 ANALYSIS FEATURES                     │
+    ├─────────────────────────────────────────────────────────────┤
+    │  🔧 Standardized 2x2 Chart Layouts                         │
+    │  📈 Multi-Year Comparative Analysis (2017-2023)            │
+    │  📡 NVIS Frequency Band Analysis                            │
+    │  🌍 Dual-Station Ionospheric Monitoring                    │
+    │  ⚡ Real-time foF2 Critical Frequency Calculations         │
+    │  📋 Professional Scientific Report Formatting              │
+    ╰─────────────────────────────────────────────────────────────╯
+
+    ╭─────────────────────────────────────────────────────────────╮
+    │                   🚀 QUICK START COMMANDS                   │
+    ├─────────────────────────────────────────────────────────────┤
+    │  pip install -r requirements.txt                           │
+    │  python generators/generate_corrected_charts.py            │
+    │  python analysis/guam_april15-28_fof2_7years.py           │
+    │  python automation/run_all_2x2_charts.py                  │
+    ╰─────────────────────────────────────────────────────────────╯
+
+                    ╭─────────────────────────────────╮
+                    │        📁 REPOSITORY MAP        │
+                    ├─────────────────────────────────┤
+                    │  📂 core/      - Layout Engine  │
+                    │  📂 analysis/  - 6 Main Scripts │
+                    │  📂 generators/- Chart Creators │
+                    │  📂 automation/- Batch Tools    │
+                    │  📂 utilities/ - Display Tools  │
+                    │  📂 data/      - NVIS Data      │
+                    │  📂 output/    - Generated PNG  │
+                    ╰─────────────────────────────────╯
+
+    ╭─────────────────────────────────────────────────────────────╮
+    │                      🌊 WAVE ANALYSIS                       │
+    ├─────────────────────────────────────────────────────────────┤
+    │                                                             │
+    │    📡 Radio Waves  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~      │
+    │                   /                                   \     │
+    │                  /         IONOSPHERE F2 LAYER        \    │
+    │                 /_____________________________________ \   │
+    │                /                                       \   │
+    │               /              foF2 = 11.2 MHz           \  │
+    │              /                                          \ │
+    │    🌍 EARTH /_____________NVIS PROPAGATION______________\│
+    │                                                             │
+    │    🔊 DGFC Transmitter → 📡 Ionospheric Reflection → 📻   │
+    │                                                             │
+    ╰─────────────────────────────────────────────────────────────╯
+
+                    ╭─────────────────────────────────╮
+                    │      🎯 RESEARCH OUTCOMES       │
+                    ├─────────────────────────────────┤
+                    │  📊 Standardized Visualizations │
+                    │  📈 Statistical Trend Analysis  │
+                    │  🌍 Multi-Station Comparisons   │
+                    │  📡 NVIS Optimization Data      │
+                    │  📋 Publication-Ready Charts    │
+                    ╰─────────────────────────────────╯
+
+    ╭─────────────────────────────────────────────────────────────╮
+    │           🏆 EVALUATING NVIS FOR REMOTE WILDLIFE           │
+    │              MONITORING: A FIELD TRIAL IN THE              │
+    │                   BORNEO RAINFOREST                        │
+    │                                                             │
+    │    "Advancing Conservation Through NVIS Communication      │
+    │     Technology in Challenging Tropical Environments"       │
+    │                                                             │
+    │              🎓 PhD Research - Cardiff University           │
+    │              🌿 Danau Girang Field Centre, Malaysia        │
+    ╰─────────────────────────────────────────────────────────────╯
+
+                              ╭─────────────╮
+                              │  Made with  │
+                              │  🐍 Python  │
+                              │  📊 Science │
+                              │  ❤️  Passion │
+                              ╰─────────────╯

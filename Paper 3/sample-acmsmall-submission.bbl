@@ -1,0 +1,237 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{14}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{} and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showURL}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showURL #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[Augustin et~al\mbox{.}(2016)]%
+        {Augustin2016LoRa}
+\bibfield{author}{\bibinfo{person}{Alo{\"y}s Augustin}, \bibinfo{person}{Jiazi
+  Yi}, \bibinfo{person}{Thomas Clausen}, {and} \bibinfo{person}{William~Mark
+  Townsley}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{A Study of {LoRa}: Long Range \& Low Power Networks
+  for the Internet of Things}.
+\newblock \bibinfo{journal}{\emph{Sensors}} \bibinfo{volume}{16},
+  \bibinfo{number}{9} (\bibinfo{year}{2016}), \bibinfo{pages}{1466}.
+\newblock
+\href{https://doi.org/10.3390/s16091466}{doi:\nolinkurl{10.3390/s16091466}}
+
+
+\bibitem[Butterworth(2026)]%
+        {BearWaveRepository}
+\bibfield{author}{\bibinfo{person}{Mark~Andrew Butterworth}.}
+  \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{{BearWave Paper 3}: Open hardware and software
+  repository}.
+\newblock
+\urldef\tempurl%
+\url{https://github.com/butterworthma/Paper-3}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{Accessed 24 May 2026}.
+
+
+\bibitem[Butterworth et~al\mbox{.}(2025)]%
+        {ButterworthMarkAndrew2025ERCi}
+\bibfield{author}{\bibinfo{person}{Mark~Andrew Butterworth},
+  \bibinfo{person}{Omer Rana}, \bibinfo{person}{Pablo Orozco-terWengel},
+  \bibinfo{person}{Beno{\^i}t Goossens}, {and} \bibinfo{person}{Charith
+  Perera}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{Enhancing Remote Conservation in Borneo: NVIS for
+  Wildlife Monitoring and Protection using BearWave}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the ACM SIGCAS/SIGCHI Conference on
+  Computing and Sustainable Societies}}. \bibinfo{publisher}{ACM},
+  \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{80--98}.
+\newblock
+\showISBNx{9798400714849}
+
+
+\bibitem[Butterworth et~al\mbox{.}(2026)]%
+        {Butterworth2026BorneoFieldTrial}
+\bibfield{author}{\bibinfo{person}{Mark~Andrew Butterworth},
+  \bibinfo{person}{Omer Rana}, \bibinfo{person}{Pablo Orozco-terWengel},
+  \bibinfo{person}{Beno{\^i}t Goossens}, {and} \bibinfo{person}{Charith
+  Perera}.} \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{Evaluating NVIS for Remote Wildlife Monitoring: A
+  Field Trial in the Borneo Rainforest}.  (\bibinfo{year}{2026}).
+\newblock
+\newblock
+\shownote{Manuscript}.
+
+
+\bibitem[Hill et~al\mbox{.}(2019)]%
+        {Hill2019AudioMothHardware}
+\bibfield{author}{\bibinfo{person}{Andrew~P. Hill}, \bibinfo{person}{Peter
+  Prince}, \bibinfo{person}{Jake~L. Snaddon}, \bibinfo{person}{C.~Patrick
+  Doncaster}, {and} \bibinfo{person}{Alex Rogers}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{AudioMoth: A low-cost acoustic device for
+  monitoring biodiversity and the environment}.
+\newblock \bibinfo{journal}{\emph{HardwareX}}  \bibinfo{volume}{6}
+  (\bibinfo{year}{2019}), \bibinfo{pages}{e00073}.
+\newblock
+\href{https://doi.org/10.1016/j.ohx.2019.e00073}{doi:\nolinkurl{10.1016/j.ohx.2019.e00073}}
+
+
+\bibitem[{International Telecommunication Union}(nd)]%
+        {ITU_EmergencyBands}
+\bibfield{author}{\bibinfo{person}{{International Telecommunication Union}}.}
+  \bibinfo{year}{n.d.}\natexlab{}.
+\newblock \bibinfo{title}{Regionally Harmonised Frequency Bands for Emergency
+  and Disaster Relief}.
+\newblock
+\urldef\tempurl%
+\url{https://www.itu.int/en/ITU-R/information/Pages/emergency-bands.aspx}
+\showURL{%
+\tempurl}
+
+
+\bibitem[J et~al\mbox{.}(2020)]%
+        {Disaster}
+\bibfield{author}{\bibinfo{person}{Porte J}, \bibinfo{person}{Briones A},
+  \bibinfo{person}{Maso J}, \bibinfo{person}{Pares C},
+  \bibinfo{person}{Zaballos A}, {and} \bibinfo{person}{Pijoan J}.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Heterogeneous wireless IoT architecture for natural
+  disaster monitorization}.
+\newblock \bibinfo{journal}{\emph{Eurasip Journal on Wireless Communications
+  and Networking}}  \bibinfo{volume}{1} (\bibinfo{year}{2020}),
+  \bibinfo{pages}{1182--1185}.
+\newblock
+\href{https://doi.org/10.1186/s13638-020-01793-3}{doi:\nolinkurl{10.1186/s13638-020-01793-3}}
+
+
+\bibitem[{OcuTrap}(2026)]%
+        {OcuTrapSmartWildlifeTraps}
+\bibfield{author}{\bibinfo{person}{{OcuTrap}}.}
+  \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{Smart Wildlife Traps}.
+\newblock
+\urldef\tempurl%
+\url{https://ocutrap.com/}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{Accessed 4 June 2026}.
+
+
+\bibitem[Porte et~al\mbox{.}(2020)]%
+        {Antarctica}
+\bibfield{author}{\bibinfo{person}{Joaquim Porte}, \bibinfo{person}{Josep~M.
+  Maso}, \bibinfo{person}{Joan~Lluis Pijoan}, {and} \bibinfo{person}{David
+  Badia}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{{Sensing System for Remote Areas in Antarctica}}.
+\newblock \bibinfo{journal}{\emph{Radio Science}} \bibinfo{volume}{55},
+  \bibinfo{number}{3} (\bibinfo{year}{2020}), \bibinfo{pages}{1--12}.
+\newblock
+\showISSN{1944799X}
+\href{https://doi.org/10.1029/2019RS006920}{doi:\nolinkurl{10.1029/2019RS006920}}
+
+
+\bibitem[Rey-Moreno et~al\mbox{.}(2011)]%
+        {Telemedicine}
+\bibfield{author}{\bibinfo{person}{Carlos Rey-Moreno}, \bibinfo{person}{Ines
+  Bebea-Gonzalez}, \bibinfo{person}{Ignacio Foche-Perez},
+  \bibinfo{person}{River Quispe-Tacas}, \bibinfo{person}{Leopoldo Li\~{n}\'{a}n
+  Benitez}, {and} \bibinfo{person}{Javier Simo-Reigadas}.}
+  \bibinfo{year}{2011}\natexlab{}.
+\newblock \showarticletitle{A telemedicine WiFi network optimized for long
+  distances in the Amazonian jungle of Peru}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 3rd Extreme Conference on
+  Communication: The Amazon Expedition}} (Manaus, Brazil)
+  \emph{(\bibinfo{series}{ExtremeCom '11})}. \bibinfo{publisher}{Association
+  for Computing Machinery}, \bibinfo{address}{New York, NY, USA}, Article
+  \bibinfo{articleno}{9}, \bibinfo{numpages}{6}~pages.
+\newblock
+\showISBNx{9781450310796}
+\href{https://doi.org/10.1145/2414393.2414402}{doi:\nolinkurl{10.1145/2414393.2414402}}
+
+
+\bibitem[S et~al\mbox{.}(2018)]%
+        {Performance}
+\bibfield{author}{\bibinfo{person}{Hawibowo S}, \bibinfo{person}{Sunarno},
+  \bibinfo{person}{Waruwu M}, \bibinfo{person}{Luckyarno Y},
+  \bibinfo{person}{Wijaya R}, {and} \bibinfo{person}{Kristiyana S}.}
+  \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Performance Test of VHF-HF-based Emergency Data
+  Communication System between the Sardjito Hospital and District Hospital in
+  the Isolated and Disaster-prone Areas}.
+\newblock \bibinfo{journal}{\emph{EDP Sciences}}  \bibinfo{volume}{43}
+  (\bibinfo{year}{2018}).
+\newblock
+\href{https://doi.org/10.1051/e3sconf/20184301019}{doi:\nolinkurl{10.1051/e3sconf/20184301019}}
+
+
+\bibitem[Subekti et~al\mbox{.}(2003)]%
+        {Subekti2003NVIS}
+\bibfield{author}{\bibinfo{person}{Agus Subekti}, \bibinfo{person}{Koredianto
+  Usman}, \bibinfo{person}{Futoshi Ohyama}, \bibinfo{person}{Hiroshi Juzoji},
+  {and} \bibinfo{person}{Isao Nakajima}.} \bibinfo{year}{2003}\natexlab{}.
+\newblock \showarticletitle{A Study of NVIS for Communication in Emergency and
+  Disaster Medicine}. In \bibinfo{booktitle}{\emph{Proceedings of the APAMI
+  CJKMI Fall Conference}}.
+\newblock
+
+
+\bibitem[{Telonics}(2023)]%
+        {TelonicsTrapsiteTransmitters}
+\bibfield{author}{\bibinfo{person}{{Telonics}}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{Trapsite Transmitters}.
+\newblock
+\urldef\tempurl%
+\url{https://www.telonics.com/products/trapsite/}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{Accessed 4 June 2026}.
+
+
+\bibitem[{Vectronic Aerospace}(2025)]%
+        {VectronicTT5}
+\bibfield{author}{\bibinfo{person}{{Vectronic Aerospace}}.}
+  \bibinfo{year}{2025}\natexlab{}.
+\newblock \bibinfo{title}{{TT5} Trap Transmitter}.
+\newblock
+\urldef\tempurl%
+\url{https://www.vectronic-aerospace.com/tt5/}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{Accessed 4 June 2026}.
+
+
+\end{thebibliography}

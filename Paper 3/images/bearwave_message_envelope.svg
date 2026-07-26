@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="520" viewBox="0 0 1800 520">
+  <defs>
+    <style>
+      .title { font: 700 34px Arial, Helvetica, sans-serif; fill: #111; }
+      .token { font: 700 31px Arial, Helvetica, sans-serif; fill: #111; }
+      .desc { font: 21px Arial, Helvetica, sans-serif; fill: #444; }
+      .small { font: 18px Arial, Helvetica, sans-serif; fill: #555; }
+      .example { font: 31px "Courier New", Courier, monospace; fill: #111; }
+      .box { stroke: #777; stroke-width: 1.5; rx: 16; }
+      .protocol { fill: #e8f2ff; }
+      .node { fill: #e9f6ea; }
+      .type { fill: #fff2df; }
+      .id { fill: #f1e9fa; }
+      .flags { fill: #fff2df; }
+      .data { fill: #e8f2ff; }
+      .examplebox { fill: #fff; stroke: #999; stroke-width: 1.2; rx: 12; }
+      .pipe { font: 700 32px Arial, Helvetica, sans-serif; fill: #777; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1800" height="520" fill="#fff"/>
+  <text class="title" x="900" y="54" text-anchor="middle">BearWave application-layer message envelope</text>
+  <text class="small" x="900" y="89" text-anchor="middle">Fixed field order with compact data tokens for low-bandwidth JS8Call transport</text>
+
+  <!-- Field boxes -->
+  <rect class="box protocol" x="60" y="145" width="190" height="130"/>
+  <text class="token" x="155" y="192" text-anchor="middle">BW1</text>
+  <text class="desc" x="155" y="229" text-anchor="middle">Protocol/version</text>
+  <text class="desc" x="155" y="258" text-anchor="middle">marker</text>
+
+  <text class="pipe" x="270" y="223" text-anchor="middle">|</text>
+
+  <rect class="box node" x="295" y="145" width="205" height="130"/>
+  <text class="token" x="397.5" y="192" text-anchor="middle">N01</text>
+  <text class="desc" x="397.5" y="229" text-anchor="middle">Short node</text>
+  <text class="desc" x="397.5" y="258" text-anchor="middle">identifier</text>
+
+  <text class="pipe" x="520" y="223" text-anchor="middle">|</text>
+
+  <rect class="box type" x="545" y="145" width="205" height="130"/>
+  <text class="token" x="647.5" y="192" text-anchor="middle">TA</text>
+  <text class="desc" x="647.5" y="229" text-anchor="middle">Message</text>
+  <text class="desc" x="647.5" y="258" text-anchor="middle">type</text>
+
+  <text class="pipe" x="770" y="223" text-anchor="middle">|</text>
+
+  <rect class="box id" x="795" y="145" width="200" height="130"/>
+  <text class="token" x="895" y="192" text-anchor="middle">7L</text>
+  <text class="desc" x="895" y="229" text-anchor="middle">Message</text>
+  <text class="desc" x="895" y="258" text-anchor="middle">identifier</text>
+
+  <text class="pipe" x="1015" y="223" text-anchor="middle">|</text>
+
+  <rect class="box flags" x="1040" y="145" width="205" height="130"/>
+  <text class="token" x="1142.5" y="192" text-anchor="middle">T1</text>
+  <text class="desc" x="1142.5" y="229" text-anchor="middle">Alarm/status</text>
+  <text class="desc" x="1142.5" y="258" text-anchor="middle">flags</text>
+
+  <text class="pipe" x="1265" y="223" text-anchor="middle">|</text>
+
+  <rect class="box data" x="1290" y="145" width="450" height="130"/>
+  <text class="token" x="1515" y="192" text-anchor="middle">B68,H64,T23</text>
+  <text class="desc" x="1515" y="229" text-anchor="middle">Compact data payload</text>
+  <text class="desc" x="1515" y="258" text-anchor="middle">battery, humidity, temperature</text>
+
+  <!-- Example message -->
+  <text class="small" x="900" y="350" text-anchor="middle">Example serialized message</text>
+  <rect class="examplebox" x="500" y="375" width="800" height="75"/>
+  <text class="example" x="900" y="423" text-anchor="middle">BW1|N01|TA|7L|T1|B68,H64,T23</text>
+</svg>
