@@ -1,0 +1,10 @@
+scope,subset,record_count,SNR_dB_n,SNR_dB_min,SNR_dB_q1,SNR_dB_median,SNR_dB_q3,SNR_dB_max,DT_seconds_n,DT_seconds_min,DT_seconds_q1,DT_seconds_median,DT_seconds_q3,DT_seconds_max
+W5,all,254,254,-20,-0.75,6,12,21,254,-0.7,-0.5,-0.4,-0.2,-0.1
+W5,CQ_only,246,246,-20,-1,6,11,21,246,-0.7,-0.5,-0.4,-0.2,-0.1
+W5,CQ_plus_HB,246,246,-20,-1,6,11,21,246,-0.7,-0.5,-0.4,-0.2,-0.1
+W5,heartbeat_only,0,0,,,,,,0,,,,,
+W5,ID_only,8,8,-2,10,14.5,17.5,21,8,-0.6,-0.425,-0.4,-0.275,-0.1
+W5,previous_selection,0,0,,,,,,0,,,,,
+W5,additional,254,254,-20,-0.75,6,12,21,254,-0.7,-0.5,-0.4,-0.2,-0.1
+W5,previous_CQ,0,0,,,,,,0,,,,,
+W5,additional_CQ,246,246,-20,-1,6,11,21,246,-0.7,-0.5,-0.4,-0.2,-0.1

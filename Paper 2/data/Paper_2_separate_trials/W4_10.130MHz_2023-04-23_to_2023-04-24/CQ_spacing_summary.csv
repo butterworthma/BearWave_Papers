@@ -1,0 +1,2 @@
+window_id,CQ_rows,intervals,mode_seconds,mode_count_each,min_seconds,q1_seconds,median_seconds,q3_seconds,max_seconds
+W4,90,89,615,72,285.0,615.0,615.0,615.0,23820.0

@@ -1,0 +1,21 @@
+{
+  "window_id": "W1",
+  "dial_frequency_MHz": "5.357",
+  "first_recorded_RX": "2023-04-17 06:31:30",
+  "last_recorded_RX": "2023-04-19 10:59:30",
+  "RX_rows": "230",
+  "CQ_rows": "228",
+  "heartbeat_rows": "0",
+  "identifier_only_rows": "2",
+  "most_frequent_CQ_gap_seconds": "615",
+  "gap_occurrences": "192",
+  "CQ_intervals": "227",
+  "site_evidence": "Report p.5: Blue Trail, first location, 17 April, 5.357 MHz; p.9: Ridge first location (RL1), 18 April, 5.357 MHz. Exact move time not supplied.",
+  "hardware_evidence": "Author identification from trial report/photos: QRP at 5 MHz on 18 April. Radio on 17 and 19 April not specified; no change times or date-clock basis supplied.",
+  "nominal_power_evidence": "1 W documented for the 126-row chart subset only; other rows unassigned.",
+  "diary_source": "Diary pp. 5-6, 9; chart 1",
+  "operational_notes": "Receiving antenna relocated on 17 April; exact observation boundary unknown.",
+  "comparison_status": "Descriptive observations available; constant configuration and transmission denominator not established.",
+  "raw_source_files": "5MHzALL19-04-2023.TXT; 5MZ copy taken 20-04-2023.TXT",
+  "log_time_basis": "UTC, author-confirmed GPS-set clock; incident/configuration times remain separately qualified."
+}

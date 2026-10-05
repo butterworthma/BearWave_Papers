@@ -1,0 +1,21 @@
+{
+  "window_id": "W7",
+  "dial_frequency_MHz": "5.357",
+  "first_recorded_RX": "2023-04-27 00:07:00",
+  "last_recorded_RX": "2023-04-27 20:59:00",
+  "RX_rows": "222",
+  "CQ_rows": "222",
+  "heartbeat_rows": "0",
+  "identifier_only_rows": "0",
+  "most_frequent_CQ_gap_seconds": "315",
+  "gap_occurrences": "203",
+  "CQ_intervals": "221",
+  "site_evidence": "Latest dated site entry is Landing Location 2 on 25 April (report p.21); no dated 27 April location entry. Carry-forward not established.",
+  "hardware_evidence": "Radio identity on 27 April remains unknown; do not extend the 25 April Hermes Lite assignment without evidence.",
+  "nominal_power_evidence": "Do not automatically carry forward the 25 April 5 W setting.",
+  "diary_source": "Author recollection on 5 October 2026; raw logs",
+  "operational_notes": "Mostly 315-second CQ spacing; first 315-second pair 02:26:00-02:31:15. This is an observed change, not a verified scheduler transition time.",
+  "comparison_status": "Descriptive observations available; constant configuration and transmission denominator not established.",
+  "raw_source_files": "Final logs/ALL20m.TXT",
+  "log_time_basis": "UTC, author-confirmed GPS-set clock; incident/configuration times remain separately qualified."
+}

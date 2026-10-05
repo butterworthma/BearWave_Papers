@@ -1,0 +1,21 @@
+{
+  "window_id": "W2",
+  "dial_frequency_MHz": "7.078",
+  "first_recorded_RX": "2023-04-18 02:16:00",
+  "last_recorded_RX": "2023-04-18 22:51:15",
+  "RX_rows": "66",
+  "CQ_rows": "57",
+  "heartbeat_rows": "0",
+  "identifier_only_rows": "9",
+  "most_frequent_CQ_gap_seconds": "915",
+  "gap_occurrences": "41",
+  "CQ_intervals": "56",
+  "site_evidence": "Report p.11: Ridge second location (RL2), 18 April, 7.078 MHz, dated photograph caption.",
+  "hardware_evidence": "Author identification from trial report/photos: Hermes Lite at 7 MHz on 18 April. Pi/controller identity and date-clock basis not specified.",
+  "nominal_power_evidence": "5 W stated in the historical chart title; not independently calibrated.",
+  "diary_source": "Diary pp. 11-13; chart 2",
+  "operational_notes": "Historical curve plots DT, not SNR; it cannot diagnose falling RF power.",
+  "comparison_status": "Descriptive observations available; constant configuration and transmission denominator not established.",
+  "raw_source_files": "3.5MHz copy taken 20-04-2023.TXT; 7-5MHzAll19-04-2023.TXT",
+  "log_time_basis": "UTC, author-confirmed GPS-set clock; incident/configuration times remain separately qualified."
+}

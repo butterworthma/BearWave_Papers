@@ -1,0 +1,38 @@
+{
+  "prepared": "2026-10-05",
+  "analysis": "Retrospective protocol v1.2; unchanged v1.0 descriptive rules",
+  "source_files": [
+    {
+      "name": "analysed_records.csv",
+      "sha256": "8b99b89da4a98827ae4ef089b78f93eafed7769de7f1483220a5e3f8614c7683"
+    },
+    {
+      "name": "descriptive_summaries.csv",
+      "sha256": "1f4b3e029c0759567b78b99858e88a714dfb01370d28cf5323b5051dd229e06e"
+    },
+    {
+      "name": "window_coverage.csv",
+      "sha256": "602950f9cacf347a05e2f41cdfac4501785051c31fb676329059a8f069e4c694"
+    },
+    {
+      "name": "CQ_inter_reception_intervals.csv",
+      "sha256": "bd6a431c4e4833f181c7689a66b42f50126296bc0ea08258bb345d5009fb65cf"
+    },
+    {
+      "name": "CQ_gap_summaries.csv",
+      "sha256": "ee9451331e3227c6420af301bd75782d639fdc0d6d6f411d7d858cb70486abb6"
+    },
+    {
+      "name": "inputs/consolidated_trial_windows.csv",
+      "sha256": "d80b8db8cf5114138dbf717449ca1bb865aae5e17c91ee44238d9b85ac6ebca5"
+    }
+  ],
+  "excluded_export_columns": [
+    "payload",
+    "encoded_frame",
+    "frame_bits",
+    "utc (redundant timestamp)",
+    "previous (redundant flag)"
+  ],
+  "record_count": 1177
+}
