@@ -1,0 +1,21 @@
+{
+  "window_id": "W6",
+  "dial_frequency_MHz": "10.130",
+  "first_recorded_RX": "2023-04-25 00:02:15",
+  "last_recorded_RX": "2023-04-27 02:02:30",
+  "RX_rows": "183",
+  "CQ_rows": "176",
+  "heartbeat_rows": "1",
+  "identifier_only_rows": "6",
+  "most_frequent_CQ_gap_seconds": "615",
+  "gap_occurrences": "138",
+  "CQ_intervals": "175",
+  "site_evidence": "Report pp.21-22: Landing Location 2, 25 April, 5.357/10.130 MHz. Exact move time and continuity on 26-27 April not supplied.",
+  "hardware_evidence": "Author identification from trial report/photos: QRP at 10 MHz on 25 April. Continuation on 26-27 April and exact date-clock alignment unresolved.",
+  "nominal_power_evidence": "1 W marked in second-location table on 25 April; continuity unverified.",
+  "diary_source": "Diary pp. 21-22",
+  "operational_notes": "Different nominal power from concurrent 5.357 MHz; not a controlled band comparison. Last target RX precedes receiver retuning to 7.078 MHz on 27 April.",
+  "comparison_status": "Descriptive observations available; constant configuration and transmission denominator not established.",
+  "raw_source_files": "Final logs/ALL40m.TXT",
+  "log_time_basis": "UTC, author-confirmed GPS-set clock; incident/configuration times remain separately qualified."
+}

@@ -1,0 +1,10 @@
+scope,subset,record_count,SNR_dB_n,SNR_dB_min,SNR_dB_q1,SNR_dB_median,SNR_dB_q3,SNR_dB_max,DT_seconds_n,DT_seconds_min,DT_seconds_q1,DT_seconds_median,DT_seconds_q3,DT_seconds_max
+W6,all,183,183,-24,-17,-9,-4,7,183,0,0.2,0.4,0.5,0.7
+W6,CQ_only,176,176,-24,-17,-9,-4,7,176,0,0.2,0.4,0.5,0.7
+W6,CQ_plus_HB,177,177,-24,-17,-9,-4,7,177,0,0.2,0.4,0.5,0.7
+W6,heartbeat_only,1,1,0,0,0,0,0,1,0.7,0.7,0.7,0.7,0.7
+W6,ID_only,6,6,-23,-8.25,-5.5,-5,-4,6,0.1,0.3,0.35,0.4,0.5
+W6,previous_selection,0,0,,,,,,0,,,,,
+W6,additional,183,183,-24,-17,-9,-4,7,183,0,0.2,0.4,0.5,0.7
+W6,previous_CQ,0,0,,,,,,0,,,,,
+W6,additional_CQ,176,176,-24,-17,-9,-4,7,176,0,0.2,0.4,0.5,0.7
