@@ -1,0 +1,544 @@
+{
+  "maps": 667,
+  "pixel": [
+    453,
+    220
+  ],
+  "latitude": 5.413643333333334,
+  "longitude": 118.03780888888889,
+  "palette": {
+    "(255, 0, 0)": 1,
+    "(255, 255, 0)": 2,
+    "(136, 136, 0)": 3,
+    "(0, 136, 0)": 4,
+    "(0, 255, 0)": 5,
+    "(0, 255, 255)": 6,
+    "(0, 136, 136)": 7,
+    "(0, 0, 255)": 8,
+    "(0, 0, 136)": 9,
+    "(136, 0, 0)": 10,
+    "(136, 0, 136)": 11,
+    "(255, 0, 255)": 12,
+    "(136, 136, 136)": 13,
+    "(187, 187, 187)": 14
+  },
+  "files_first": "2023-04-14 12:30:00",
+  "files_last": "2023-04-21 14:00:00",
+  "unique_hashes": 667,
+  "unresolved_modes": {
+    "1": 92,
+    "2": 29,
+    "3": 18
+  },
+  "matched_all": 392,
+  "matched_test": 379,
+  "windows": {
+    "W1": {
+      "all": 226,
+      "test": 224,
+      "unmatched_all": 4,
+      "class_range": [
+        5,
+        12
+      ],
+      "class_median": 10.0,
+      "comparison_all": {
+        "below": 209,
+        "unresolved": 6,
+        "near": 11
+      },
+      "comparison_test": {
+        "below": 207,
+        "unresolved": 6,
+        "near": 11
+      }
+    },
+    "W2": {
+      "all": 64,
+      "test": 55,
+      "unmatched_all": 2,
+      "class_range": [
+        6,
+        11
+      ],
+      "class_median": 10,
+      "comparison_all": {
+        "below": 52,
+        "near": 11,
+        "above": 1
+      },
+      "comparison_test": {
+        "below": 43,
+        "near": 11,
+        "above": 1
+      }
+    },
+    "W3": {
+      "all": 102,
+      "test": 100,
+      "unmatched_all": 0,
+      "class_range": [
+        5,
+        12
+      ],
+      "class_median": 11.0,
+      "comparison_all": {
+        "below": 81,
+        "unresolved": 8,
+        "above": 7,
+        "near": 6
+      },
+      "comparison_test": {
+        "below": 79,
+        "unresolved": 8,
+        "above": 7,
+        "near": 6
+      }
+    }
+  },
+  "hourly": [
+    {
+      "local_hour": 0,
+      "maps": 22,
+      "median_class": 10.0,
+      "q1_class": 10.0,
+      "q3_class": 11.0,
+      "min_class": 9,
+      "max_class": 12
+    },
+    {
+      "local_hour": 1,
+      "maps": 22,
+      "median_class": 9.0,
+      "q1_class": 9.0,
+      "q3_class": 10.0,
+      "min_class": 8,
+      "max_class": 10
+    },
+    {
+      "local_hour": 2,
+      "maps": 24,
+      "median_class": 9.0,
+      "q1_class": 9.0,
+      "q3_class": 9.0,
+      "min_class": 8,
+      "max_class": 11
+    },
+    {
+      "local_hour": 3,
+      "maps": 23,
+      "median_class": 9.0,
+      "q1_class": 8.0,
+      "q3_class": 9.0,
+      "min_class": 7,
+      "max_class": 10
+    },
+    {
+      "local_hour": 4,
+      "maps": 24,
+      "median_class": 7.0,
+      "q1_class": 7.0,
+      "q3_class": 8.25,
+      "min_class": 6,
+      "max_class": 9
+    },
+    {
+      "local_hour": 5,
+      "maps": 22,
+      "median_class": 7.0,
+      "q1_class": 6.25,
+      "q3_class": 7.0,
+      "min_class": 6,
+      "max_class": 8
+    },
+    {
+      "local_hour": 6,
+      "maps": 21,
+      "median_class": 7.0,
+      "q1_class": 6.0,
+      "q3_class": 8.0,
+      "min_class": 5,
+      "max_class": 9
+    },
+    {
+      "local_hour": 7,
+      "maps": 22,
+      "median_class": 9.0,
+      "q1_class": 8.25,
+      "q3_class": 9.75,
+      "min_class": 7,
+      "max_class": 11
+    },
+    {
+      "local_hour": 8,
+      "maps": 22,
+      "median_class": 11.0,
+      "q1_class": 10.25,
+      "q3_class": 12.0,
+      "min_class": 9,
+      "max_class": 12
+    },
+    {
+      "local_hour": 9,
+      "maps": 24,
+      "median_class": 11.0,
+      "q1_class": 11.0,
+      "q3_class": 12.0,
+      "min_class": 10,
+      "max_class": 13
+    },
+    {
+      "local_hour": 10,
+      "maps": 24,
+      "median_class": 10.5,
+      "q1_class": 10.0,
+      "q3_class": 11.0,
+      "min_class": 10,
+      "max_class": 12
+    },
+    {
+      "local_hour": 11,
+      "maps": 21,
+      "median_class": 10.0,
+      "q1_class": 10.0,
+      "q3_class": 11.0,
+      "min_class": 10,
+      "max_class": 11
+    },
+    {
+      "local_hour": 12,
+      "maps": 24,
+      "median_class": 10.0,
+      "q1_class": 10.0,
+      "q3_class": 11.0,
+      "min_class": 9,
+      "max_class": 11
+    },
+    {
+      "local_hour": 13,
+      "maps": 24,
+      "median_class": 10.5,
+      "q1_class": 10.0,
+      "q3_class": 11.0,
+      "min_class": 9,
+      "max_class": 12
+    },
+    {
+      "local_hour": 14,
+      "maps": 22,
+      "median_class": 11.0,
+      "q1_class": 10.0,
+      "q3_class": 11.0,
+      "min_class": 10,
+      "max_class": 12
+    },
+    {
+      "local_hour": 15,
+      "maps": 24,
+      "median_class": 11.0,
+      "q1_class": 11.0,
+      "q3_class": 11.0,
+      "min_class": 11,
+      "max_class": 13
+    },
+    {
+      "local_hour": 16,
+      "maps": 24,
+      "median_class": 11.0,
+      "q1_class": 11.0,
+      "q3_class": 11.25,
+      "min_class": 10,
+      "max_class": 13
+    },
+    {
+      "local_hour": 17,
+      "maps": 24,
+      "median_class": 11.0,
+      "q1_class": 10.75,
+      "q3_class": 12.0,
+      "min_class": 10,
+      "max_class": 12
+    },
+    {
+      "local_hour": 18,
+      "maps": 22,
+      "median_class": 11.0,
+      "q1_class": 10.0,
+      "q3_class": 11.75,
+      "min_class": 10,
+      "max_class": 12
+    },
+    {
+      "local_hour": 19,
+      "maps": 24,
+      "median_class": 11.0,
+      "q1_class": 10.0,
+      "q3_class": 11.25,
+      "min_class": 10,
+      "max_class": 12
+    },
+    {
+      "local_hour": 20,
+      "maps": 23,
+      "median_class": 11.0,
+      "q1_class": 10.0,
+      "q3_class": 12.0,
+      "min_class": 10,
+      "max_class": 12
+    },
+    {
+      "local_hour": 21,
+      "maps": 21,
+      "median_class": 11.0,
+      "q1_class": 10.0,
+      "q3_class": 12.0,
+      "min_class": 9,
+      "max_class": 13
+    },
+    {
+      "local_hour": 22,
+      "maps": 22,
+      "median_class": 10.0,
+      "q1_class": 10.0,
+      "q3_class": 11.75,
+      "min_class": 9,
+      "max_class": 12
+    },
+    {
+      "local_hour": 23,
+      "maps": 21,
+      "median_class": 10.0,
+      "q1_class": 10.0,
+      "q3_class": 11.0,
+      "min_class": 9,
+      "max_class": 12
+    }
+  ],
+  "coverage_missing": [
+    "2023-04-14 13:00:00",
+    "2023-04-14 13:15:00",
+    "2023-04-14 13:30:00",
+    "2023-04-14 13:45:00",
+    "2023-04-14 19:15:00",
+    "2023-04-15 03:45:00",
+    "2023-04-15 12:30:00",
+    "2023-04-17 16:15:00",
+    "2023-04-18 15:15:00",
+    "2023-04-18 16:00:00",
+    "2023-04-18 22:45:00",
+    "2023-04-21 06:15:00"
+  ],
+  "hourly_local_dates": "2023-04-15 to 2023-04-20 inclusive",
+  "mode_radius_sensitivity": {
+    "W1": {
+      "1": {
+        "below": 175,
+        "unresolved": 38,
+        "near": 11
+      },
+      "2": {
+        "below": 207,
+        "unresolved": 6,
+        "near": 11
+      },
+      "3": {
+        "unresolved": 5,
+        "below": 210,
+        "near": 9
+      }
+    },
+    "W2": {
+      "1": {
+        "unresolved": 8,
+        "below": 34,
+        "near": 12,
+        "above": 1
+      },
+      "2": {
+        "below": 43,
+        "near": 11,
+        "above": 1
+      },
+      "3": {
+        "below": 40,
+        "unresolved": 1,
+        "near": 13,
+        "above": 1
+      }
+    },
+    "W3": {
+      "1": {
+        "below": 73,
+        "unresolved": 14,
+        "above": 7,
+        "near": 6
+      },
+      "2": {
+        "below": 79,
+        "unresolved": 8,
+        "above": 7,
+        "near": 6
+      },
+      "3": {
+        "below": 86,
+        "unresolved": 3,
+        "above": 5,
+        "near": 6
+      }
+    }
+  },
+  "station_comparison": {
+    "W1": {
+      "Darwin": {
+        "median": 11.267,
+        "min": 3.562,
+        "max": 14.475
+      },
+      "Guam": {
+        "median": 10.65,
+        "min": 2.2,
+        "max": 15.35
+      }
+    },
+    "W2": {
+      "Darwin": {
+        "median": 9.141,
+        "min": 4.04,
+        "max": 13.108
+      },
+      "Guam": {
+        "median": 9.025,
+        "min": 2.4,
+        "max": 15.0
+      }
+    },
+    "W3": {
+      "Darwin": {
+        "median": 12.97,
+        "min": 5.44,
+        "max": 14.687
+      },
+      "Guam": {
+        "median": 10.756499999999999,
+        "min": 2.7,
+        "max": 13.75
+      }
+    }
+  },
+  "daily_blocks": {
+    "04-06": {
+      "maps": 67,
+      "median_class": 7,
+      "range": [
+        5,
+        9
+      ]
+    },
+    "10-17": {
+      "maps": 187,
+      "median_class": 11,
+      "range": [
+        9,
+        13
+      ]
+    },
+    "18-23": {
+      "maps": 133,
+      "median_class": 11,
+      "range": [
+        9,
+        13
+      ]
+    }
+  },
+  "daily_summary": [
+    {
+      "local_date": "2023-04-14",
+      "min_class": 11,
+      "max_class": 13,
+      "low_hours": [
+        20,
+        22,
+        23
+      ]
+    },
+    {
+      "local_date": "2023-04-15",
+      "min_class": 6,
+      "max_class": 13,
+      "low_hours": [
+        5,
+        6
+      ]
+    },
+    {
+      "local_date": "2023-04-16",
+      "min_class": 6,
+      "max_class": 13,
+      "low_hours": [
+        5,
+        6
+      ]
+    },
+    {
+      "local_date": "2023-04-17",
+      "min_class": 6,
+      "max_class": 13,
+      "low_hours": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "local_date": "2023-04-18",
+      "min_class": 5,
+      "max_class": 12,
+      "low_hours": [
+        6
+      ]
+    },
+    {
+      "local_date": "2023-04-19",
+      "min_class": 6,
+      "max_class": 13,
+      "low_hours": [
+        5,
+        6
+      ]
+    },
+    {
+      "local_date": "2023-04-20",
+      "min_class": 7,
+      "max_class": 12,
+      "low_hours": [
+        5
+      ]
+    },
+    {
+      "local_date": "2023-04-21",
+      "min_class": 5,
+      "max_class": 12,
+      "low_hours": [
+        6
+      ]
+    }
+  ],
+  "daily_block_radius_sensitivity": {
+    "1": {
+      "04-06": 7.0,
+      "10-17": 11,
+      "18-23": 11.0
+    },
+    "2": {
+      "04-06": 7,
+      "10-17": 11,
+      "18-23": 11
+    },
+    "3": {
+      "04-06": 7,
+      "10-17": 11.0,
+      "18-23": 11.0
+    }
+  }
+}
