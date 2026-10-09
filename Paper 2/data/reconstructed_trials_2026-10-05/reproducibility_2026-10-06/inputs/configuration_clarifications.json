@@ -1,0 +1,57 @@
+{
+  "source": "Author follow-up answers to additional trial notes questions 1, 2 and 3",
+  "breakdown_times": {
+    "precision": "approximate",
+    "tolerance_minutes": null,
+    "basis": "Author considers the 03:00 entry a rough timing; not an exact exclusion boundary"
+  },
+  "events": [
+    {
+      "date": "2023-04-19",
+      "band_MHz": 5,
+      "local_start": "09:00",
+      "start_UTC": "2023-04-19 01:00",
+      "start_precision": "approximate",
+      "stop_UTC": null
+    },
+    {
+      "date": "2023-04-19",
+      "band_MHz": 3.5,
+      "local_start": "09:15",
+      "start_UTC": "2023-04-19 01:15",
+      "start_precision": "approximate",
+      "stop_UTC": null
+    },
+    {
+      "date": "2023-04-26",
+      "bands_MHz": [
+        5,
+        10
+      ],
+      "stop_relation": "just before",
+      "stop_reference_UTC": "2023-04-26 06:00",
+      "exact_stop_UTC": null,
+      "local_restart": "14:00",
+      "restart_UTC": "2023-04-26 06:00",
+      "supersedes_previous_stop_UTC": "2023-04-26 07:00",
+      "power_W_after_restart": {
+        "5": 1,
+        "10": 1
+      }
+    }
+  ],
+  "use": "Supersedes conflicting original entries for interpretation; original note text preserved. No shifts or deletion of reception timestamps.",
+  "equipment": {
+    "author_confirmation": "QRP means DSB2",
+    "adopted_name": "QRPGuys DSB2",
+    "supersedes_note_label": "ORP Labs",
+    "scope": "QRP-labelled trial radio, including the 17 April entry"
+  },
+  "low_band_frequency": {
+    "adopted_MHz": 3.578,
+    "basis": "Author explicitly instructs use of receiver-log frequency",
+    "superseded_note_MHz": 3.573,
+    "raw_notes_preserved": true,
+    "transmitter_dial_independently_verified": false
+  }
+}

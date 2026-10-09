@@ -1,0 +1,23 @@
+{
+  "latitude": 5.413643333333334,
+  "longitude": 118.03780888888889,
+  "central_pixel": [
+    453,
+    220
+  ],
+  "image_size": [
+    640,
+    479
+  ],
+  "map_bounds_pixels": [
+    31,
+    33,
+    541,
+    431
+  ],
+  "patch": "7 x 7 original RGB pixels, containing nested 3 x 3 and 5 x 5 patches",
+  "time_source": "Filename timestamps, interpreted as UTC; representative rendered titles checked during source review, not all titles independently OCR-verified",
+  "classification": "Exact legend-colour matching; no nearest-colour interpolation",
+  "maps": 667,
+  "pixels": 32683
+}
