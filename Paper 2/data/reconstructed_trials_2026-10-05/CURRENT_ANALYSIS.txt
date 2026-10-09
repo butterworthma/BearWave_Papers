@@ -1,0 +1,13 @@
+Current analysis and field documentation — 7 October 2026
+
+The files in this directory and W1–W7 subfolders are the preserved 5 October
+reception release. Its originally missing .gitignore has been restored with
+the hash specified in the original manifest; measurement files are unchanged.
+
+The current protocol, configuration clarifications, expanded analyses and
+reproduction command are in reproducibility_2026-10-06/README.txt.
+Historical configuration notes and eight-hour target references in the earlier
+release are superseded by that protocol and inputs/current_configuration.csv.
+
+The original trial plan, plan-to-implementation summary, chronology and selected
+photos are linked from ../../field_documentation/README.md.
