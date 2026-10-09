@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+!inputs/*.csv
+!expected/*.csv
+!results/*.csv
+!figures/*.csv
+!figures/*.png
+!results/figures/*.png

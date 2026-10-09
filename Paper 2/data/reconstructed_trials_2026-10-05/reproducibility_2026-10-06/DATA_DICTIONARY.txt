@@ -1,0 +1,53 @@
+Reception input
+record_id: stable upstream reconstruction identifier; unique within the inventory.
+window_id: retrospective W1–W7 assignment, independently checked by date/frequency.
+recorded_timestamp: YYYY-MM-DD HH:MM:SS; UTC for Borneo receiver records.
+dial_frequency_MHz: internal receiver-tuning context, MHz; not inferred from filename.
+SNR_dB: JS8Call decoder SNR estimate among successful decodes, dB.
+DT_seconds: decoder timing offset, seconds; not message latency.
+audio_offset_Hz: decoded audio offset, Hz.
+category: CQ = controlled test message; heartbeat; ID_only = identifier-only record.
+in_previous_spreadsheets: True/False; membership of the older selected reception set.
+source_locations: original relative log filenames and line numbers; multiple copies separated by semicolons.
+frequency_header_locations: source lines providing internal frequency context.
+
+Window input
+UTC_date_inclusive / UTC_date_exclusive: descriptive partition boundaries, not operating times.
+frequency_MHz: exact band value required for the window rule.
+
+Map inputs
+filename: original map image filename, not a local computer path.
+timestamp_UTC: filename-derived map time.
+sha256: digest of the full original PNG; originals are not bundled.
+dx,dy: pixel displacement from (453,220); integers -3..3.
+red,green,blue: original 8-bit RGB channels, unmodified.
+class_MHz: integer legend colour class; approximate foF2 scale in MHz.
+r1,r2,r3 in derived tables: radius 1,2,3 pixels, i.e. 3x3,5x5,7x7 patches.
+*_mode: unique modal matched colour class; blank when tied/unresolved.
+*_min,*_max: extreme matching palette classes in the patch, not measurement error bounds.
+*_pixels: count of exact palette-colour matches in the patch.
+map_minus_receive_seconds: map timestamp minus reception timestamp; within +/-450 s.
+*_comparison_1MHz_buffer: below, near, above, unresolved relative to modal class +/-1 MHz.
+
+Station inputs
+April_day: continuous UTC day-of-month in April 2023, including fractional day.
+foF2_MHz: value from the author's 2023 series, unchanged.
+
+Power-chart inputs
+chart: chart1.xml, chart3.xml or chart4.xml in the supplied trial-report DOCX.
+point_index: zero-based point index in that chart's cached series.
+recorded_timestamp: UTC time reconstructed from plotted clock and documented date.
+nominal_power_W: documentary chart label, not a per-reception measurement.
+
+Pi input/results
+recorded_time: logger time of day; time zone unspecified.
+temperature_C: measured processor temperature, degrees Celsius.
+CPU_MHz/core_MHz: reported clock frequencies, MHz.
+health_bits: original binary status string; leading zeros preserved.
+Vcore_V: reported core voltage, volts.
+*_current/*_history: binary status flags, not independent event counts.
+
+Missing values and units
+Empty numeric cells mean unavailable/not applicable; they are never replaced by zero.
+Missing maps and empty SNR time bins are not interpolated.
+Quartiles use type-7 interpolation; medians and ranges describe observations, not uncertainty in a population mean.

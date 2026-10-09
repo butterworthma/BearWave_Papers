@@ -1,0 +1,21 @@
+Ionospheric data and maps
+
+The paper acknowledges the Global Ionospheric Radio Observatory (GIRO) and the
+Lowell GIRO Data Center for access to ionosonde data; NOAA/NESDIS and the URSI
+Ionosonde Network Advisory Group; the USSF SSC NEXION Digisonde network,
+whose program manager is Annette Parsons; NOAA's Space Weather Prediction
+Center; and the Australian Bureau of Meteorology for contextual space-weather
+products and ionospheric maps. Retain the manuscript's full acknowledgment.
+
+GIRO data-resource identifier: https://spase.info/SMWG/Observatory/GIRO
+Map interpretation/provenance: https://www.sws.bom.gov.au/HF_Systems/6/5
+GIRO reference: Reinisch and Galkin, Earth, Planets and Space 63, 377–381 (2011).
+
+These are provenance references, not claims of a fresh download or permission
+to relicense third-party content. The package includes extracted numerical/RGB
+inputs needed for analysis, not the full set of original map images or workbook.
+Source-specific attribution and terms continue to apply.
+
+BearWave reception data
+https://github.com/butterworthma/BearWave_Papers/tree/main/Paper%202/data/reconstructed_trials_2026-10-05
+The exact checked repository commit is recorded in provenance.json.

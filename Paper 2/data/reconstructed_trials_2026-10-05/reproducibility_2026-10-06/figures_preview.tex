@@ -1,0 +1,15 @@
+\documentclass{article}
+\usepackage[margin=15mm]{geometry}
+\usepackage{graphicx,pgfplots}
+\pgfplotsset{compat=1.16}
+\usepgfplotslibrary{groupplots}
+\begin{document}
+\section*{Regional ionospheric context}
+\input{figures/ionosonde_context}
+\clearpage
+\section*{Received signal and timing distributions}
+\input{figures/window_distributions}
+\clearpage
+\section*{Qualitative solar-charging interference}
+\includegraphics[width=\linewidth]{figures/solar_charging_interference.png}
+\end{document}

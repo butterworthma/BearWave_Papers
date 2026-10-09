@@ -1,0 +1,195 @@
+BearWave Borneo — retrospective analysis protocol, amendment v1.3
+6 October 2026
+
+1. STATUS AND OBJECTIVE
+
+This is retrospective analysis, developed after the April 2023 field trial and
+inspection of its results. It is not a preregistration or a claim that all
+comparisons were planned before data collection. It preserves the numerical
+reception rules of v1.0/v1.2 and documents later exploratory analyses and author
+clarifications. It does not imply supervisor approval.
+
+The objective is field communication feasibility for sparse conservation
+messages. The four manuscript research questions remain unchanged. The measured
+outcomes are reception occurrence, decoded SNR/DT and within-window reception
+spacing. Reliability, coverage, energy autonomy and welfare outcomes are distinct
+evaluation objectives.
+
+Earlier manuscript results were selected partly to support the intended
+argument. The current numerical analysis includes the complete identified
+trial-sender receive inventory from the supplied archive: 1,177 unique rows,
+comprising 484 previously selected receptions and 693 additional receptions.
+The earlier spreadsheet also contained 17 local transmissions, excluded from
+receive analysis. Original-selection and additional-record summaries remain
+available, so the previous selection can be assessed rather than hidden.
+
+The full identified inventory is not proof that every field observation or
+attempted transmission was recorded. Every analysed reception is retained;
+poor SNR, long spacing and known equipment incidents are not exclusion criteria.
+
+2. RECEPTION INPUT AND EARLIER RECONSTRUCTION
+
+inputs/receptions.csv matches the measurement rows published at the GitHub
+commit in provenance.json. One row is a decoded receive record, not necessarily
+a complete application message, independent trial or acknowledged event.
+
+The earlier reconstruction assigned frequency from internal tuning headers,
+carried forward in original file order; the author confirmed software-controlled
+tuning. Filenames do not determine band. Exact duplicate backup records were
+consolidated, preserving source references, and local transmissions/other senders
+were excluded from the target-sender analysis. The current package starts AFTER
+those steps; original message content and raw logs are not included, so it does
+not independently revalidate raw sender classification or duplicate identity.
+
+Timestamps in the reception data are UTC, confirmed by the author as GPS-set.
+SNR, DT and audio offset retain their source values. No smoothing, imputation,
+outcome trimming or failed-message SNR substitution is used. All current rows
+have finite SNR and DT. Malformed source material is an upstream reconstruction
+matter, not silently treated as zero in this analysis.
+
+3. OBSERVATION WINDOWS AND ELIGIBILITY
+
+The fixed W1–W7 partition is reproduced from inputs/window_rules.csv:
+W1: 5.357 MHz, UTC dates 17–19 April; W2: 7.078 MHz, 18 April;
+W3: 7.078 MHz, 20–21 April; W4: 10.130 MHz, 23–24 April;
+W5: 5.357 MHz, 25–26 April; W6: 10.130 MHz, 25–27 April;
+W7: 5.357 MHz, 27 April.
+
+Date-rule starts are inclusive and ends exclusive. These rules reproduce the
+existing retrospective partition, rather than a previously unrecorded operating
+schedule. Every eligible input row must match exactly one rule; unmatched or
+multiply matched rows cause validation to fail. No row is selected on SNR.
+
+W7 separates a day with changed test cadence. Its UTC midnight boundary is a
+reporting choice, not a verified radio-setting change. Different-frequency
+windows can overlap. Table II first/last times are observed reception bounds,
+not operating start/stop times. The windows may span site and power changes.
+
+The timing amendment treats the author's breakdown times as approximate. All
+explicit local diary times convert at UTC+8; the receive records themselves are
+not shifted. Dates, identified hardware and nominal powers in
+inputs/current_configuration.csv follow the current manuscript. No precise
+per-record configuration is fabricated across approximate change times.
+
+No target-sender receptions were identified at 3.578 or 14.078 MHz. Their absence
+from positive-reception windows does not create a failed-attempt denominator;
+the manuscript reports these observations and the 24 April repeat-setting issue.
+The 3.578 MHz value follows the author's instruction to use receiver tuning.
+
+4. RECEPTION SUMMARY RULES
+
+Report counts and SNR/DT minimum, type-7 quartiles, median and maximum for each
+window, pooled frequency and full inventory. Type-7 uses sorted position
+(n-1)*p and linear interpolation. Empty subsets have n=0 and blank statistics.
+
+Keep all, test-only (source category CQ), test plus heartbeat, heartbeat-only,
+identifier-only, prior-selection, additional, prior-test and additional-test
+summaries. The original category name is preserved for traceability; the paper
+calls these controlled test messages. Summary spreads are not confidence
+intervals. SNR is conditional on successful decoding and is not received power.
+
+Within each window, sort test records by timestamp and stable ID. Subtract
+consecutive timestamps, retaining zero spacings if present; n receptions yield
+n-1 intervals. Report every tied mode. Do not fill gaps or derive missed attempts
+from the nominal test interval. The longest interval excludes the periods before
+the first reception, after the last and between windows, and is not a worst-case
+field-trial outage or an alarm-delivery bound.
+
+Nominal-1-W associations use the trial report's chart1, chart3 and chart4 cached
+numeric points. Convert fractional-day axes to seconds with nearest-second
+rounding and advance the date when the plotted clock wraps; dates come from
+chart/report labels. Match timestamp, frequency and SNR exactly to one receive
+row. The reported 126/102/92 associations are chart subsets, not simply the
+previously selected spreadsheet rows. The matching validates numerical lineage;
+the nominal power itself remains a documentary assignment.
+
+5. EXPLORATORY TIME-OF-DAY ANALYSIS
+
+Added after examination of the results, following discussion of diurnal
+behaviour. Convert UTC to local UTC+8 and group ALL test records by original
+window, local calendar date and fixed four-hour bins starting at 00,04,08,12,16,20.
+Report n, median, minimum and maximum for every populated bin. Empty bins are
+absent, not zero-SNR measurements. No other dates/bands/bins are discarded.
+
+The manuscript illustrates afternoon 12:00–15:59 versus evening 20:00–23:59 in
+both 7.078 MHz ridge trials. This is a post hoc descriptive comparison; no
+significance test, independent-sample assumption or causal ionospheric effect
+is asserted. Local interference can also influence decoder SNR.
+
+6. IONOSONDE AND MAP INPUTS
+
+The workbook's Darwin J21:J1364 and Guam K21:K1364 columns are labelled 2023
+in row 20. Month/day and clock come from columns A/B; A stores a common older
+year, so the explicit series-header year supplies 2023. Each station has 1,344
+quarter-hour observations from 15–28 April. The author confirmed UTC, MHz, and
+direct copying from the download without additional averaging or gap filling.
+Source quality flags and original download files are not included. Figure 1
+plots the supplied values directly, without smoothing or interpolation.
+
+The maps are Bureau of Meteorology global foF2 estimates, not local Borneo
+ionograms. The 667 PNGs span 14 April 12:30 to 21 April 14:00 UTC, with 12 absent
+scheduled maps inside that extent. There is no supplied coverage for 23–27 April.
+Map filename timestamps are used; representative rendered title dates were
+checked, not every image title independently OCR-verified.
+
+The equirectangular plot bounds are x=31..541, y=33..431 in 640x479 images. The
+field-centre location 5.413643 N,118.037809 E maps to pixel (453,220). Original
+RGB pixels from a 7x7 patch and legend colours for classes 1..14 MHz are included.
+The exact extraction geometry, source image hashes and palette are recorded.
+
+For each 3x3,5x5,7x7 patch, retain exact palette-colour matches. The unique modal
+class is the estimate; ties/no matches remain undefined. Main results use 5x5;
+3x3 and 7x7 test sensitivity. Non-palette pixels are not assigned the nearest
+colour. Coastline overlays, raster resolution and class discretisation limit
+physical precision; the classes are approximate estimates, not local soundings.
+
+Match each reception to the nearest scheduled quarter-hour within 7.5 minutes;
+an exact midpoint uses the earlier slot. If that slot's map is missing, leave
+the reception unmatched rather than choosing a farther image. Keep matched rows
+even when their map mode is unresolved. This yields 392 matched receptions,
+379 of them test records; matching does not demonstrate the propagation path.
+
+Daily profiles use six complete local calendar days, 15–20 April inclusive.
+Compute pooled hourly and 04–06,10–17,18–23 block medians from available resolved
+map classes, without equal-day reweighting or interpolation. Sensitivity results
+use the same date/block rules for each patch size. A +/-1 MHz comparison buffer
+is a graphical sensitivity convention, not an error bar or confidence interval.
+
+Darwin/Guam and the global maps share observational inputs including GIRO;
+agreement is contextual evidence, not independent validation. Higher foF2 does
+not itself explain absence of lower-frequency decoding, and map comparisons do
+not select a proven optimum operating frequency or prove pure NVIS propagation.
+
+7. CHAMBER DIAGNOSTIC
+
+The supplied text contains Pi output, not the chamber's raw temperature logger.
+Skip repeated column headers and blank lines; parse all other rows explicitly.
+Preserve time-of-day without inventing a time zone. Decode the binary status
+word's current/history undervoltage and throttling bits separately. Historical
+flags do not identify the time of the original event. Do not count every flagged
+sample as an independent incident.
+
+The 26 October 2023 date, 30 C chamber setpoint and +/-0.1 C stability are author-
+supplied context. The battery was inside the chamber; the Pi4/Hermes Lite system
+ran SparkSDR and JS8Call with a dummy load and no live over-the-air receptions.
+The Pi series reproduces the 1,930 samples and 58.4–75.0 C range. It does not
+independently verify chamber stability or establish the cause of field crashes.
+
+8. TARGETS, FIGURES AND CHANGE CONTROL
+
+The current notification design scenario is ten hours within a conditional
+twelve-hour attendance allowance, assuming two hours for staff mobilisation
+and travel. Earlier eight-hour target statements are historical and superseded.
+This is not a universal sun-bear confinement limit or measured deadline result.
+Thirty-day autonomy and reduced travel/risk/cost are system targets or intended
+benefits, not measurements inferred from successful decodes.
+
+The distribution figure's complete numerical coordinate list is checked against
+recomputed summaries. The station-figure data are checked against source series.
+The solar-noise image remains qualitative; no absolute noise calibration or
+before/after attenuation estimate is created from its colours.
+
+Expected outputs are frozen comparison targets, not calculation inputs. The
+file manifest detects accidental source/expected-result changes. Preserve the
+historical public release and record any future amendments explicitly. No
+receipt rows or paper statistics were changed by this reproducibility work.

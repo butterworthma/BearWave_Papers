@@ -1,0 +1,15 @@
+manuscript_finding,input,reproduction_output,scope
+Table II: seven windows,inputs/receptions.csv; inputs/window_rules.csv,results/window_coverage.csv,"All input rows partitioned exactly once; times bound received observations, not continuous operation"
+Table II: nominal 1 W subsets,inputs/nominal_power_chart_points.csv,results/nominal_1W_record_mapping.csv; results/nominal_1W_subsets.csv,"126, 102 and 92 exact chart matches; nominal power is documentary"
+Table III: band/traffic counts,inputs/receptions.csv,results/frequency_counts.csv,All identified trial-sender receptions; no attempt denominator
+Figure 1: Darwin and Guam foF2,inputs/Darwin_2023_foF2.csv; inputs/Guam_2023_foF2.csv,figures/ionosonde_context.tex,1344 observations per station; workbook extraction verified; storm annotation is contextual
+Figure 2: SNR and DT distributions,inputs/receptions.csv,results/descriptive_summaries.csv; figures/window_distributions.tex,Every plotted coordinate validated against recomputed type-7 summaries
+Figure 3: solar interference,figures/solar_charging_interference.png,Original qualitative image retained,No calibrated noise-level or attenuation claim; antenna relocation response is field observation
+Window SNR range and test-only sensitivity,inputs/receptions.csv,results/descriptive_summaries.csv,Median range -12 to +6 dB; test-only differences at most 1 dB
+Two 7 MHz afternoon/evening comparisons,inputs/receptions.csv,results/SNR_by_local_time.csv,All populated four-hour bins retained; descriptive post hoc comparisons
+Dawn/day mapped foF2,inputs/map_pixels.csv; inputs/map_palette.csv; inputs/map_inventory.csv,results/map_daily_blocks.csv; results/Map_colour_classes.csv,"7 versus 11 MHz class medians, stable over three patch sizes"
+Reception/map alignment,inputs/receptions.csv; inputs/map_pixels.csv,results/Matched_receptions.csv,Nearest scheduled map within 450 seconds; no interpolation or farther-slot substitution
+Reception spacing and longest interval,inputs/receptions.csv,results/CQ_inter_reception_intervals.csv; results/CQ_gap_summaries.csv,Longest within-window interval 24945 s; not alarm latency or overall worst-case outage
+Pi temperature and health flags,inputs/chamber_pi_results.txt,results/chamber_pi_records.csv; results/chamber_summary.json,"1930 readings, 58.4 to 75.0 C; source is Pi output, not chamber logger"
+Field hardware/site/power changes,inputs/current_configuration.csv; inputs/configuration_clarifications.json,Documentary synthesis matching manuscript,Not inferred from SNR or assigned across approximate changes
+Ten-hour notification and 30-day autonomy,"ANALYSIS_PROTOCOL_v1.3.txt, section 8","Design targets, not computed results","No numerical validation of service delivery, staff response or endurance is claimed"

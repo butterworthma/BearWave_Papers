@@ -1,0 +1,25 @@
+REPOSITORY RELEASE — 7 October 2026
+
+Repository: https://github.com/butterworthma/BearWave_Papers
+Location: Paper 2/data/reconstructed_trials_2026-10-05/reproducibility_2026-10-06
+Baseline checked: 6e8be8ccfab64f8a7d895f8bb1e58862b9f3b8bd
+Numerical supplement prepared: 6 October 2026
+
+This release adds the complete numerical supplement and links it from the
+Paper 2 landing page. The missing .gitignore in the parent baseline directory
+is restored with exactly the SHA-256 recorded in the original manifest. All
+48 previously published baseline files are preserved byte-for-byte.
+
+The numerical analysis, inputs and observation windows are unchanged from the
+tested local supplement. Release documentation and manifest hashes have been
+updated to describe the repository package. Its 22 analysis checks are rerun
+before publication and from a fresh checkout after publication.
+
+Companion field documentation is in Paper 2/field_documentation. The historical
+trial plan is supplied unchanged and distinguished from the retrospective
+analysis protocol. The selected photos preserve the embedded source-image bytes.
+No current manuscript source is uploaded: the author is editing it in Overleaf.
+
+For a fixed data citation, use this directory's Git commit permalink rather
+than assuming main will remain unchanged. Third-party attribution remains in
+ATTRIBUTION.txt and the manuscript acknowledgment.

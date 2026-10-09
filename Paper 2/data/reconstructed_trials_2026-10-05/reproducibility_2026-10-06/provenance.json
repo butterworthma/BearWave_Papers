@@ -1,0 +1,56 @@
+{
+  "prepared": "2026-10-06",
+  "protocol": "1.3 retrospective reproducibility amendment",
+  "github_commit_verified": "6e8be8ccfab64f8a7d895f8bb1e58862b9f3b8bd",
+  "github_path": "Paper 2/data/reconstructed_trials_2026-10-05/",
+  "published_baseline_files": 48,
+  "published_records_match_local_analysis": true,
+  "source_hashes": {
+    "supplied_archive": {
+      "filename": "Archive.zip",
+      "sha256": "b11a2aec2e183ad5de442bfe1408df8be1ffee2532d2d140ec035ca2f0869b1c",
+      "included": false
+    },
+    "ionosonde_workbook": {
+      "filename": "Complete (version 1).xlsx",
+      "sha256": "f978aa0791a7406d7ef14c7c78d20a01ac6778bb9b0d1bff718d306f028b39ab",
+      "included": false
+    },
+    "pi_diagnostic": {
+      "filename": "results.txt",
+      "sha256": "6bb71508b9656833917fb015b0e72709770c4be9b75b940486f19484370aa3bc",
+      "included": true
+    },
+    "trial_report": {
+      "filename": "DGFC Trials Results -v1.docx",
+      "sha256": "12acd385ea2b0e6f8c4bb31f1bff989c10dfa26816db926703fb203120cff36c",
+      "included": false,
+      "extracted_charts": [
+        "chart1.xml",
+        "chart3.xml",
+        "chart4.xml"
+      ]
+    }
+  },
+  "local_package_repairs": [
+    {
+      "path": "baseline_release/.gitignore",
+      "issue": "Referenced by the published manifest but absent from the verified GitHub commit",
+      "repair": "Restored from the original local release; bytes match the previously published SHA-256 exactly",
+      "github_changed": false
+    }
+  ],
+  "source_extraction_checks": {
+    "map_images": 667,
+    "map_RGB_pixels": 32683,
+    "legend_consistent_across_all_images": true,
+    "station_exports_match_workbook_reextraction_byte_for_byte": true,
+    "power_chart_points_extracted_from_original_DOCX": 320
+  },
+  "repository_release": {
+    "date": "2026-10-07",
+    "path": "Paper 2/data/reconstructed_trials_2026-10-05/reproducibility_2026-10-06",
+    "changes": "Release documentation and manifest updated; numerical inputs, analysis rules and expected results unchanged; parent baseline .gitignore restored.",
+    "companion_documentation": "Paper 2/field_documentation"
+  }
+}
