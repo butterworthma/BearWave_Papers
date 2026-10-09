@@ -1,0 +1,12 @@
+\begin{tikzpicture}
+\begin{groupplot}[group style={group size=2 by 1,horizontal sep=1.15cm},width=7.8cm,height=5.3cm,xmin=15,xmax=29,ymin=0,ymax=18,xtick={15,18,21,24,27},ytick={0,5,10,15},xlabel={April 2023 (UTC)},ylabel={foF2 (MHz)},tick label style={font=\scriptsize},label style={font=\footnotesize},title style={font=\footnotesize},axis line style={black!50},grid=major,grid style={black!10}]
+\nextgroupplot[title={Darwin}]
+\path[fill=black!8] (axis cs:23,0) rectangle (axis cs:25,18);
+\foreach \f in {5.357,7.078,10.130,14.078}{\addplot[gray,dashed,thin] coordinates {(15,\f) (29,\f)};}
+\addplot[blue!65!black,thin] table[x=April_day,y=foF2_MHz,col sep=comma]{figures/Darwin_2023_foF2.csv};
+\nextgroupplot[title={Guam}]
+\path[fill=black!8] (axis cs:23,0) rectangle (axis cs:25,18);
+\foreach \f in {5.357,7.078,10.130,14.078}{\addplot[gray,dashed,thin] coordinates {(15,\f) (29,\f)};}
+\addplot[orange!85!black,thin] table[x=April_day,y=foF2_MHz,col sep=comma]{figures/Guam_2023_foF2.csv};
+\end{groupplot}
+\end{tikzpicture}
