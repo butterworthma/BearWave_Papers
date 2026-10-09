@@ -1,0 +1,21 @@
+{
+  "window_id": "W4",
+  "dial_frequency_MHz": "10.130",
+  "first_recorded_RX": "2023-04-23 00:02:00",
+  "last_recorded_RX": "2023-04-24 23:31:00",
+  "RX_rows": "120",
+  "CQ_rows": "90",
+  "heartbeat_rows": "24",
+  "identifier_only_rows": "6",
+  "most_frequent_CQ_gap_seconds": "615",
+  "gap_occurrences": "72",
+  "CQ_intervals": "89",
+  "site_evidence": "Report pp.18-21: ridge antenna changes on 23 April and battery-change photograph on 24 April for 10.130/14.078 MHz. Exact numbered positions unspecified.",
+  "hardware_evidence": "Author identification from trial report/photos: QRP at 10 MHz on 23 and 24 April; corroborates diary assignment on 24 April. Exact date-clock alignment and controller identity unresolved.",
+  "nominal_power_evidence": "1 W stated for the 92-row chart subset; remaining rows need configuration continuity.",
+  "diary_source": "Diary pp. 18-21; chart 4",
+  "operational_notes": "PC reset, antenna damage/repair and CQ/heartbeat changes occur in this diary period; exact affected rows unassigned.",
+  "comparison_status": "Descriptive observations available; constant configuration and transmission denominator not established.",
+  "raw_source_files": "ALBackup 40m 10-130 24042023 @ 1256UTC.TXT; Final logs/ALL40m.TXT",
+  "log_time_basis": "UTC, author-confirmed GPS-set clock; incident/configuration times remain separately qualified."
+}
