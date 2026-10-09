@@ -1,0 +1,196 @@
+{
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "2a8ced6dd370a8f5e21c5fdf51248a92cd2e8d13a7b9db1a968fe8d7cea31086"
+    },
+    {
+      "path": "README.md",
+      "sha256": "22418f98f82f9b1d32abf6bd64487a020e155fb706f0dcfb9eb57afa8ccf5b10"
+    },
+    {
+      "path": "W1_5.357MHz_2023-04-17_to_2023-04-19/CQ_inter_reception_intervals.csv",
+      "sha256": "226ba5bf2f0866921fc04638ccf37bf5059c6e210754fc6bce67fbbc870ffe0e"
+    },
+    {
+      "path": "W1_5.357MHz_2023-04-17_to_2023-04-19/CQ_spacing_summary.csv",
+      "sha256": "de2e3baedb7b8eb694077db3248af3d142acde5211a2ae54e78493de51501feb"
+    },
+    {
+      "path": "W1_5.357MHz_2023-04-17_to_2023-04-19/README.md",
+      "sha256": "0fbc1c4ad95189ff85f26588cacd68b6adc3b7f90145b06bda86b021541a8589"
+    },
+    {
+      "path": "W1_5.357MHz_2023-04-17_to_2023-04-19/configuration.json",
+      "sha256": "19f45eb46eae8a6987101205f01db8058d53d1e4780e4aa098012bbe94bcad6a"
+    },
+    {
+      "path": "W1_5.357MHz_2023-04-17_to_2023-04-19/descriptive_statistics.csv",
+      "sha256": "e228fd989d0eea2a9723a06d04191ef645328dd336e7493d8ff29b39f52099de"
+    },
+    {
+      "path": "W1_5.357MHz_2023-04-17_to_2023-04-19/received_records.csv",
+      "sha256": "b0b684ac36a70efdb9b841582989b08c4e72ce1c1be10149f5f71d051d5ea1c6"
+    },
+    {
+      "path": "W2_7.078MHz_2023-04-18_to_2023-04-18/CQ_inter_reception_intervals.csv",
+      "sha256": "16b8a77be7776d7b8d662aac1634b5210189cb8521ecf63c046061924ceefd7c"
+    },
+    {
+      "path": "W2_7.078MHz_2023-04-18_to_2023-04-18/CQ_spacing_summary.csv",
+      "sha256": "684d4946dc04371ce62fcde3eddeedb3bc965f932a08480ddfab185a17aabc53"
+    },
+    {
+      "path": "W2_7.078MHz_2023-04-18_to_2023-04-18/README.md",
+      "sha256": "188dd4f4c4d54605656ad743c17d75493fec536e3211d26c1b8bf2367ef2d293"
+    },
+    {
+      "path": "W2_7.078MHz_2023-04-18_to_2023-04-18/configuration.json",
+      "sha256": "ffc9c4e14a5d84b55b97432a780e50bb8fe0ea2b7c997df0ca5ceb129efb8361"
+    },
+    {
+      "path": "W2_7.078MHz_2023-04-18_to_2023-04-18/descriptive_statistics.csv",
+      "sha256": "6611df7a522a5602b843fb065a9af1c7e705bb341fcdb33079f5959f951e5c44"
+    },
+    {
+      "path": "W2_7.078MHz_2023-04-18_to_2023-04-18/received_records.csv",
+      "sha256": "188304cbe919f9445ceef4637f5aded814ff00547bc16004dc8323ed3f4cb3c6"
+    },
+    {
+      "path": "W3_7.078MHz_2023-04-20_to_2023-04-21/CQ_inter_reception_intervals.csv",
+      "sha256": "3d984b0045f2a790ed9c9537d029d1424bdc86dc154241f231fb44dfebe5c483"
+    },
+    {
+      "path": "W3_7.078MHz_2023-04-20_to_2023-04-21/CQ_spacing_summary.csv",
+      "sha256": "1dabd0f94ee0a39487c816c11b0af782b54cb3585a0ee6329071c49cb08b4f18"
+    },
+    {
+      "path": "W3_7.078MHz_2023-04-20_to_2023-04-21/README.md",
+      "sha256": "367ae317d0388a42c5480a82a37c8735bb3b3f4e02863ea85918cd3718e7493c"
+    },
+    {
+      "path": "W3_7.078MHz_2023-04-20_to_2023-04-21/configuration.json",
+      "sha256": "b99076e7fb92164eaa4ed176dbf1dc314bba76a829b315b18fb57144e53a08f0"
+    },
+    {
+      "path": "W3_7.078MHz_2023-04-20_to_2023-04-21/descriptive_statistics.csv",
+      "sha256": "7a64bd74ae0e28a54ee4192ad58f193f7a14ae0063aa10901bd1b87ca3dfc0c7"
+    },
+    {
+      "path": "W3_7.078MHz_2023-04-20_to_2023-04-21/received_records.csv",
+      "sha256": "1f7561e8664d0b94acb77c151da0c527289a5b6ee0ae1d56f12af79b1ef42903"
+    },
+    {
+      "path": "W4_10.130MHz_2023-04-23_to_2023-04-24/CQ_inter_reception_intervals.csv",
+      "sha256": "6a555188daadd51efc4463cba12f2db79c4943a2ed24039080dfaaf494219916"
+    },
+    {
+      "path": "W4_10.130MHz_2023-04-23_to_2023-04-24/CQ_spacing_summary.csv",
+      "sha256": "2ea8f2cba5f8a700e6147cab4a9fe300a4aa65e55d4ec3cdbb0484ffc58269bb"
+    },
+    {
+      "path": "W4_10.130MHz_2023-04-23_to_2023-04-24/README.md",
+      "sha256": "9609a2117546425efc7b6db2e5cc9577aa73d70f2dc7674543d00413cba2aaae"
+    },
+    {
+      "path": "W4_10.130MHz_2023-04-23_to_2023-04-24/configuration.json",
+      "sha256": "99ffa563cc3eb1c0f5d475ec0ab2e5acd81354cd0ad169c24a04d346fe0c62b7"
+    },
+    {
+      "path": "W4_10.130MHz_2023-04-23_to_2023-04-24/descriptive_statistics.csv",
+      "sha256": "bb36c4aa56e0ef074e3cc510ea7535ff5911467448db6980035fdb6deb543bb9"
+    },
+    {
+      "path": "W4_10.130MHz_2023-04-23_to_2023-04-24/received_records.csv",
+      "sha256": "1b6373d979c259f8446dbfc164e6c1f781033c5cc278f627b69fc049d922a9a6"
+    },
+    {
+      "path": "W5_5.357MHz_2023-04-25_to_2023-04-26/CQ_inter_reception_intervals.csv",
+      "sha256": "d0895ea43b40467fc61a0cc9f50a9f3b8cb168a475dc1dbb3c028103e15503c3"
+    },
+    {
+      "path": "W5_5.357MHz_2023-04-25_to_2023-04-26/CQ_spacing_summary.csv",
+      "sha256": "fd716a2c7be2f4de22fd73cb4e8fd090e7b47d742441228ea5050f00cea846db"
+    },
+    {
+      "path": "W5_5.357MHz_2023-04-25_to_2023-04-26/README.md",
+      "sha256": "d0f58a2dffec7e04aeb4ad21b41e508215713b06afca3bb28de881ac9107c0d1"
+    },
+    {
+      "path": "W5_5.357MHz_2023-04-25_to_2023-04-26/configuration.json",
+      "sha256": "3d462d7f72dc879d284f5b43bd3ad1a1207c3f8919efebacd0abe1dcbf438ba6"
+    },
+    {
+      "path": "W5_5.357MHz_2023-04-25_to_2023-04-26/descriptive_statistics.csv",
+      "sha256": "43ace25ee72c490f4074eada228b4af1d1c1b7d57b6352dfd18587fd4a01464a"
+    },
+    {
+      "path": "W5_5.357MHz_2023-04-25_to_2023-04-26/received_records.csv",
+      "sha256": "a879d3031c534ac7bea4a2734c008b6659c4e4597f1f1fde6f96e294a87d4683"
+    },
+    {
+      "path": "W6_10.130MHz_2023-04-25_to_2023-04-27/CQ_inter_reception_intervals.csv",
+      "sha256": "82d988832a084182890f9c9037ed47cb4eff447851e7e38ee82a6f4297de5214"
+    },
+    {
+      "path": "W6_10.130MHz_2023-04-25_to_2023-04-27/CQ_spacing_summary.csv",
+      "sha256": "429f7f75584fbe3c469e0c01cc540e148ee18d1aaf8f7870779dd228fff4d49c"
+    },
+    {
+      "path": "W6_10.130MHz_2023-04-25_to_2023-04-27/README.md",
+      "sha256": "a88391fa24c429d27de2afc862091aa0e945e9c8849e41505e1a15c79ce22f34"
+    },
+    {
+      "path": "W6_10.130MHz_2023-04-25_to_2023-04-27/configuration.json",
+      "sha256": "48139004ca35e777fcb135133c596c4e91c7267f6f719def25ee3ac440c0a1cb"
+    },
+    {
+      "path": "W6_10.130MHz_2023-04-25_to_2023-04-27/descriptive_statistics.csv",
+      "sha256": "0fefe6d554b5a6b69394624827e37c36865aa9e2c077e8abae1543bd9bec8e60"
+    },
+    {
+      "path": "W6_10.130MHz_2023-04-25_to_2023-04-27/received_records.csv",
+      "sha256": "49c54df4aa0dbf90d3bfccffc98914a89d43af90d6ca81c3adb4acbae0de6d6a"
+    },
+    {
+      "path": "W7_5.357MHz_2023-04-27_to_2023-04-27/CQ_inter_reception_intervals.csv",
+      "sha256": "30ce478dc2cc5ff2508c194c98f3fe1ded0f4b2b077cf67af09244da9916699c"
+    },
+    {
+      "path": "W7_5.357MHz_2023-04-27_to_2023-04-27/CQ_spacing_summary.csv",
+      "sha256": "faa42b21ae29e222608cbde943cfe0c7600b3f8473568a5cb8bed55bae4c3106"
+    },
+    {
+      "path": "W7_5.357MHz_2023-04-27_to_2023-04-27/README.md",
+      "sha256": "abd769d09420ee068b0bbc28bf44c64c914dddff81be930d822e10f97e660509"
+    },
+    {
+      "path": "W7_5.357MHz_2023-04-27_to_2023-04-27/configuration.json",
+      "sha256": "31bf163e9a9bf3e892f17c92a517d7d465bdc25d8fddbcec1215b8de90192b84"
+    },
+    {
+      "path": "W7_5.357MHz_2023-04-27_to_2023-04-27/descriptive_statistics.csv",
+      "sha256": "f81fb9b35ca7f96a1d0c955a2bbcb5f3e6bfd151de65f757857e0d27e1e9e0bf"
+    },
+    {
+      "path": "W7_5.357MHz_2023-04-27_to_2023-04-27/received_records.csv",
+      "sha256": "b1e6a7ada97cfef0f8cf92762675c5f35fc0899600acb243f8da29a5c5dc9318"
+    },
+    {
+      "path": "campaign_statistics.csv",
+      "sha256": "36e54e2e5336538280437f2eab70f222fad9d3a4319a8d72d3f3d12f5fd312da"
+    },
+    {
+      "path": "provenance.json",
+      "sha256": "f23cd16335826b36f144c78f6bcff699a06ef1d59d1de4b36e20974fee2cf157"
+    },
+    {
+      "path": "test_index.csv",
+      "sha256": "f46656a9cd7f985cef373be41ee105928f5263f4ff26212a766289ebbef902a0"
+    },
+    {
+      "path": "verify_results.py",
+      "sha256": "f0e149000ef640b5ec2e40e8a14f56f976f1a843890028462293e2e08acd80ec"
+    }
+  ]
+}
