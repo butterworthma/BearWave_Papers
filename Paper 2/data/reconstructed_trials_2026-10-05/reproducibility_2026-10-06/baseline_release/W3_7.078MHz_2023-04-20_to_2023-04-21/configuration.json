@@ -1,0 +1,21 @@
+{
+  "window_id": "W3",
+  "dial_frequency_MHz": "7.078",
+  "first_recorded_RX": "2023-04-20 02:15:00",
+  "last_recorded_RX": "2023-04-21 00:17:30",
+  "RX_rows": "102",
+  "CQ_rows": "100",
+  "heartbeat_rows": "0",
+  "identifier_only_rows": "2",
+  "most_frequent_CQ_gap_seconds": "615",
+  "gap_occurrences": "76",
+  "CQ_intervals": "99",
+  "site_evidence": "Report p.15: ridge deployment, 20 April, with RL1/RL2/RL3 panorama and 3.5/7 MHz settings; exact numbered position for 7 MHz not assigned in text/caption.",
+  "hardware_evidence": "Author identification from trial report/photos: QRP at 7 MHz on 20 April. Continuation into 21 April and exact date-clock alignment unresolved.",
+  "nominal_power_evidence": "1 W stated for the matched chart; diary reports 0.5 W on 21 April without a change time.",
+  "diary_source": "Diary pp. 15-16; chart 3",
+  "operational_notes": "102 rows were stored in the nominal 10 MHz workbook. Do not automatically label the three 21 April UTC rows as 0.5 W.",
+  "comparison_status": "Descriptive observations available; constant configuration and transmission denominator not established.",
+  "raw_source_files": "ALBackup 40m 10-130 24042023 @ 1256UTC.TXT; Final logs/ALL40m.TXT",
+  "log_time_basis": "UTC, author-confirmed GPS-set clock; incident/configuration times remain separately qualified."
+}
