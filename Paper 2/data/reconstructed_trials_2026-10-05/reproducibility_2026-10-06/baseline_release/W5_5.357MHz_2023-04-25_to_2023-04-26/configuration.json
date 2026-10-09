@@ -1,0 +1,21 @@
+{
+  "window_id": "W5",
+  "dial_frequency_MHz": "5.357",
+  "first_recorded_RX": "2023-04-25 04:42:30",
+  "last_recorded_RX": "2023-04-26 23:56:45",
+  "RX_rows": "254",
+  "CQ_rows": "246",
+  "heartbeat_rows": "0",
+  "identifier_only_rows": "8",
+  "most_frequent_CQ_gap_seconds": "615",
+  "gap_occurrences": "233",
+  "CQ_intervals": "245",
+  "site_evidence": "Report pp.21-22: Landing Location 2, 25 April, 5.357/10.130 MHz. Exact move time and continuity on 26 April not supplied.",
+  "hardware_evidence": "Author identification from trial report/photos: Hermes Lite at 5 MHz on 25 April. Continuation on 26 April and exact date-clock alignment unresolved.",
+  "nominal_power_evidence": "5 W marked in second-location table on 25 April; continuity unverified.",
+  "diary_source": "Diary pp. 21-22",
+  "operational_notes": "Receiver retuning logged at 04:38:16 on 25 April; first target RX at 04:42:30.",
+  "comparison_status": "Descriptive observations available; constant configuration and transmission denominator not established.",
+  "raw_source_files": "Final logs/ALL20m.TXT",
+  "log_time_basis": "UTC, author-confirmed GPS-set clock; incident/configuration times remain separately qualified."
+}
