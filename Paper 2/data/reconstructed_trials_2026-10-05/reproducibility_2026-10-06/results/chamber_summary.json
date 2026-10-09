@@ -1,0 +1,14 @@
+{
+  "rows": 1930,
+  "temperature_min_C": 58.4,
+  "temperature_max_C": 75.0,
+  "health_counts": {
+    "01010000000000000000": 798,
+    "01010000000000000101": 1132
+  },
+  "time_zone": "Unspecified; times preserved as recorded",
+  "date": "2023-10-26, author supplied",
+  "chamber_setpoint_C": 30,
+  "setpoint_stability_C": 0.1,
+  "chamber_temperature_source": "Author account, not a chamber-logger time series"
+}

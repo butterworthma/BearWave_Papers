@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "protocol": "1.3 retrospective amendment",
+  "python": "3.12.14",
+  "checks": [
+    "Package source and expected-result hashes verified",
+    "Published baseline verifier passes with the manifest-matching missing .gitignore restored locally",
+    "Unique reception inventory: 1177 rows",
+    "All reception rows assigned exactly once by frequency/date rules, with no SNR filtering",
+    "Reproduced descriptive_summaries.csv",
+    "Reproduced CQ_gap_summaries.csv",
+    "Reproduced CQ_inter_reception_intervals.csv",
+    "Reproduced window_coverage.csv",
+    "Reproduced SNR_by_local_time.csv",
+    "Longest within-window test interval: 24945 seconds",
+    "Nominal 1 W subset counts reproduced; configuration basis remains documentary",
+    "Darwin series: 1344 unique quarter-hour observations",
+    "Reproduced Darwin_2023_foF2.csv",
+    "Guam series: 1344 unique quarter-hour observations",
+    "Reproduced Guam_2023_foF2.csv",
+    "Reproduced Map_colour_classes.csv",
+    "Reproduced Matched_receptions.csv",
+    "Reproduced Hourly_map_summary.csv",
+    "Mapped dawn/day/evening medians reproduced for all three patch sizes",
+    "Map coverage: 667 inputs, 12 missing scheduled maps",
+    "Pi diagnostic: 1930 records and 58.4\u201375.0 C range",
+    "Every distribution-figure coordinate matches recomputed SNR/DT statistics"
+  ],
+  "reception_count": 1177,
+  "longest_within_window_interval": {
+    "window_id": "W1",
+    "previous_record_id": "RX0034",
+    "next_record_id": "RX0035",
+    "previous_UTC": "2023-04-17 13:52:45",
+    "next_UTC": "2023-04-17 20:48:30",
+    "gap_seconds": 24945
+  },
+  "ionosphere": {
+    "maps": 667,
+    "matched_receptions": 392,
+    "matched_test_receptions": 379,
+    "unresolved_modes": {
+      "3": 92,
+      "5": 29,
+      "7": 18
+    },
+    "first_map_UTC": "2023-04-14 12:30:00",
+    "last_map_UTC": "2023-04-21 14:00:00",
+    "station_ranges_MHz": {
+      "Darwin": [
+        2.872,
+        15.718
+      ],
+      "Guam": [
+        2.075,
+        15.55
+      ]
+    }
+  },
+  "chamber": {
+    "rows": 1930,
+    "temperature_min_C": 58.4,
+    "temperature_max_C": 75.0,
+    "health_counts": {
+      "01010000000000000000": 798,
+      "01010000000000000101": 1132
+    },
+    "time_zone": "Unspecified; times preserved as recorded",
+    "date": "2023-10-26, author supplied",
+    "chamber_setpoint_C": 30,
+    "setpoint_stability_C": 0.1,
+    "chamber_temperature_source": "Author account, not a chamber-logger time series"
+  },
+  "boundaries": [
+    "Reception statistics start from processed public receive rows; raw-log parsing/deduplication is not rerun.",
+    "Map classifications start from included original RGB patches; optional extract_sources.py re-extracts from original PNGs.",
+    "Configuration and welfare/energy targets are documentary or design inputs, not inferred from successful reception."
+  ]
+}

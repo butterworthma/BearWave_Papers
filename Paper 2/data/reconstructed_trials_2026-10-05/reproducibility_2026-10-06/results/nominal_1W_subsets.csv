@@ -1,0 +1,4 @@
+window,frequency_MHz,receptions,basis
+W1,5.357,126,"Unique timestamp/frequency/SNR matches to chart1.xml; nominal 1 W from chart/report, not a per-reception power measurement"
+W3,7.078,102,"Unique timestamp/frequency/SNR matches to chart3.xml; nominal 1 W from chart/report, not a per-reception power measurement"
+W4,10.13,92,"Unique timestamp/frequency/SNR matches to chart4.xml; nominal 1 W from chart/report, not a per-reception power measurement"

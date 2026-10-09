@@ -1,0 +1,22 @@
+{
+  "maps": 667,
+  "matched_receptions": 392,
+  "matched_test_receptions": 379,
+  "unresolved_modes": {
+    "3": 92,
+    "5": 29,
+    "7": 18
+  },
+  "first_map_UTC": "2023-04-14 12:30:00",
+  "last_map_UTC": "2023-04-21 14:00:00",
+  "station_ranges_MHz": {
+    "Darwin": [
+      2.872,
+      15.718
+    ],
+    "Guam": [
+      2.075,
+      15.55
+    ]
+  }
+}
