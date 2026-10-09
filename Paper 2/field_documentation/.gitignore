@@ -1,0 +1,5 @@
+!*.pdf
+!*.csv
+!photos/*.jpeg
+!photos/*.png
+!photos/*.csv

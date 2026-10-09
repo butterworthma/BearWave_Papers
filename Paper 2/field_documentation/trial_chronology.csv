@@ -1,0 +1,16 @@
+UTC_date,UTC_time,precision,event,source_basis,interpretation
+2023-04-16,,date only,Base antenna near laboratory experienced charging-related broadband interference.,DGFC report: Day 1,Spectrum image is qualitative; no calibrated attenuation estimate is inferred.
+2023-04-17,,date only,"Base antenna relocated near accommodation, about 100 m from the inverter; Blue Trail 5.357 MHz deployment.",DGFC report: Day 2,Photo P02; first/last decoded bounds are in W1.
+2023-04-18,,date only,Ridge 1 at 5.357 MHz and Ridge 2 at 7.078 MHz.,DGFC report: Day 3; author radio assignment,DSB2 at 5 MHz; Hermes Lite at 7 MHz. See W1 and W2.
+2023-04-19,01:00;01:15,approximate,5 MHz start about 09:00 local; 3.5 MHz about 09:15 local.,Author clarification of trial notes,UTC+8 conversion; no stop time supplied; low-band reporting uses 3.578 MHz receiver tuning.
+2023-04-20,,date only,Ridge deployment: 3.5 MHz nominal 1 W and 7 MHz nominal 1 W.,DGFC report: Day 5,7 MHz nominal-1-W chart points matched to W3 records.
+2023-04-21,,date only,"Coax, SDR power connector and sound faults required attention; 3.5 MHz 1 W and 7 MHz 0.5 W settings noted.",DGFC report: Day 6,Power-change time is not assigned to individual receive rows.
+2023-04-22,,date only,Base antenna modified for higher bands; field equipment retested.,DGFC report: Day 7,10.130 and 14.078 MHz antenna changes; photo P09.
+2023-04-22,23:40,minute stated,Base-station PC reset following power fluctuations and radio/network problems.,DGFC report: Day 8; author UTC clarification,Original 23 April 07:40 local converts to 22 April 23:40 UTC.
+2023-04-23,,date only,Remote antennas changed for 10.130 and 14.078 MHz ridge trials.,DGFC report: Day 8,Photo P10; 14 MHz radio identity not assigned solely from this date.
+2023-04-23,10:00,approximate,"Antenna repaired after damage attributed to monkeys, around 18:00 local.",DGFC report: Day 8,Local-to-UTC conversion; event is not an exact outage boundary.
+2023-04-24,,date only,DSB2 configured at 10.130 MHz and SDR at 14.078 MHz; SDR automatic test-message repetition not enabled.,DGFC report: Day 9,Photo P11; absence of decoding is not attributed solely to propagation.
+2023-04-25,,approximate times in notes,Move to Landing Location 2; DSB2 10 MHz nominal 1 W and Hermes Lite 5 MHz nominal 5 W.,DGFC report: Day 10; author additional notes,Narrative and breakdown times differ; not used as exact filtering boundaries.
+2023-04-26,06:00,approximate,"Both 5 and 10 MHz stopped just before 06:00 UTC and restarted around 06:00 UTC (14:00 local), nominal 1 W.",Author timing clarification,Supersedes the rough original 07:00 UTC stop entry; shutdown duration unspecified.
+2023-04-27,03:45,time stated in later notes,Hermes Lite 5 MHz nominal 0.5 W and DSB2 7 MHz nominal 1 W settings introduced at 11:45 local.,Author additional notes,W7 starts before this setting change; not every W7 reception is assigned 0.5 W.
+2023-10-26,,date supplied by author,Separate Pi4/Hermes Lite chamber diagnostic with battery inside and radio on dummy load.,Pi text plus author chamber clarification,Not part of April trial; chamber stability is not independently logged in this release.

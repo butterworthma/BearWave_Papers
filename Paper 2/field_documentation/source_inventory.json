@@ -1,0 +1,21 @@
+{
+  "prepared": "2026-10-07",
+  "trial_plan": {
+    "source_filename": "Trial Plan - final.pdf",
+    "public_file": "Trial_Plan_original.pdf",
+    "sha256": "a73883446f0844a7758390995977fe9addc7f0926e349dead818828a7ae4dc7c",
+    "content": "Unchanged original planning document; not a final operating record"
+  },
+  "trial_report": {
+    "source_filename": "DGFC Trials Results -v1.docx",
+    "sha256": "12acd385ea2b0e6f8c4bb31f1bff989c10dfa26816db926703fb203120cff36c",
+    "full_document_included": false,
+    "included_material": "12 original embedded photographs plus attributed chronology/implementation summary"
+  },
+  "later_clarifications": {
+    "basis": "Author follow-up answers during manuscript review",
+    "use": "Timing precision, UTC, radio identities, nominal settings and chamber context; distinguished from original diary evidence"
+  },
+  "photos": "photos/photo_inventory.csv",
+  "analysis": "../data/reconstructed_trials_2026-10-05/reproducibility_2026-10-06/ANALYSIS_PROTOCOL_v1.3.txt"
+}
