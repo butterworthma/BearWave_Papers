@@ -1,75 +1,44 @@
-# Evaluating NVIS for Remote Wildlife Monitoring: A Field Trial in the Borneo Rainforest
+# BearWave Paper 2: Borneo field trial
 
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-blue)](https://github.com/butterworthma/BearWave-Paper2)
+Supporting data and analysis for **HF Communication for Rainforest Wildlife Monitoring: Field Evaluation of an NVIS-Oriented System** (working manuscript title).
 
-## 📊 Overview
-This repository contains the complete analysis code for **"Evaluating NVIS for Remote Wildlife Monitoring: A Field Trial in the Borneo Rainforest"** - a comprehensive study of Near Vertical Incidence Skywave (NVIS) communication for wildlife monitoring applications. The code includes ionospheric foF2 (critical frequency) analysis, field test results, and NVIS propagation modeling with data from Guam and Darwin monitoring stations.
+The April 2023 trial evaluated modest-output HF messaging for conservation monitoring around the Danau Girang Field Centre, Malaysian Borneo. The current analysis covers seven reception windows, deployment context, temporal signal variation, regional ionospheric conditions and a separate October 2023 processor diagnostic test.
 
-**GitHub Repository:** [https://github.com/butterworthma/BearWave-Paper2](https://github.com/butterworthma/BearWave-Paper2)
+## Start here
 
-## 🚀 Quick Start
+| Material | Contents |
+| --- | --- |
+| [Analysis protocol](data/reconstructed_trials_2026-10-05/reproducibility_2026-10-06/ANALYSIS_PROTOCOL_v1.3.txt) | Current retrospective analysis rules, inclusion decisions, units, time conventions and interpretation |
+| [Reproduction guide](data/reconstructed_trials_2026-10-05/reproducibility_2026-10-06/README.txt) | One-command analysis, dependencies and source boundaries |
+| [Data dictionary](data/reconstructed_trials_2026-10-05/reproducibility_2026-10-06/DATA_DICTIONARY.txt) | Field definitions, units and traffic categories |
+| [Finding-to-evidence index](data/reconstructed_trials_2026-10-05/reproducibility_2026-10-06/claim_evidence.csv) | Manuscript findings linked to inputs and calculated results |
+| [Current configuration table](data/reconstructed_trials_2026-10-05/reproducibility_2026-10-06/inputs/current_configuration.csv) | Radio, nominal RF power and deployment context for each window |
+| [Reception windows](data/reconstructed_trials_2026-10-05/test_index.csv) | W1–W7 counts and first/last reception times; per-window files in the same directory |
+| [Calculated results](data/reconstructed_trials_2026-10-05/reproducibility_2026-10-06/results) | SNR/DT summaries, reception intervals, time-of-day comparisons, map analysis and Pi diagnostics |
+| [Figures and numerical inputs](data/reconstructed_trials_2026-10-05/reproducibility_2026-10-06/figures) | Editable plots, source series and solar-interference image |
+| [Trial documentation and photographs](field_documentation/README.md) | Original trial plan, plan-to-implementation summary, chronology, equipment details and photo gallery |
+| [Data attribution](data/reconstructed_trials_2026-10-05/reproducibility_2026-10-06/ATTRIBUTION.txt) | GIRO, NEXION, NOAA and Australian Bureau of Meteorology acknowledgments |
 
-### Prerequisites
+## Reproduce the reported numerical results
+
+From the repository root, using Python 3.10 or later:
+
 ```bash
-pip install -r requirements.txt
+python3 "Paper 2/data/reconstructed_trials_2026-10-05/reproducibility_2026-10-06/reproduce.py"
 ```
 
-### Basic Usage
-```bash
-# Generate all 6 standardized charts
-python generators/generate_corrected_charts.py
+The core analysis uses the Python standard library and included files; it needs no account, network access or private source folder. It performs 22 checks and writes `results/validation.json`. Do not use Python's `-O` option. The [guide](data/reconstructed_trials_2026-10-05/reproducibility_2026-10-06/README.txt) also explains optional extraction from original maps, workbook and trial-report charts; those optional operations use Pillow/openpyxl.
 
-# Run individual analysis
-python analysis/guam_april15-28_fof2_7years.py
+The package reproduces the analysis from processed reception records. Original radio-message text and encoded frames are not redistributed, so upstream raw-log parsing, sender classification and deduplication are outside this rerun. The complete identified reception inventory is analysed, with separate summaries for the earlier selection and additional observations.
 
-# Batch process all analyses
-python automation/run_all_2x2_charts.py
-```
+## What the evidence supports
 
-## 📁 Repository Structure
-- `core/` - Core layout and formatting modules
-- `analysis/` - Main foF2 analysis scripts (6 scripts)
-- `generators/` - Chart generation utilities
-- `automation/` - Batch processing scripts
-- `utilities/` - Display and viewing tools
-- `docs/` - Documentation and guides
-- `data/` - Place NVIS_data.xlsx here (not tracked by git)
-- `output/` - Generated charts will be saved here
+Repeated HF message reception was observed at 5.357, 7.078 and 10.130 MHz, including nominal 1 W configurations. The material supports field communication feasibility, temporal signal comparisons and deployment lessons. Reception counts are decoded records, not transmitted-attempt counts or acknowledged alarm deliveries. Thirty-day autonomy and the conditional ten-hour notification budget are system design targets.
 
-## 📋 Data Requirements
-- NVIS_data.xlsx with Guam and Darwin sheets
-- Place in the `data/` directory
-- Update file paths in scripts if needed
+The [original trial plan](field_documentation/Trial_Plan_original.pdf) records intended experiments. The [plan-to-implementation summary](field_documentation/trial_plan_and_implementation.md) explains their relationship to the actual trial. The later analysis protocol is explicitly retrospective.
 
-## 📊 Generated Charts & Figures
-- **Field Test Results**: Figs 10, 14, 15 (5 GHz, 7.078 MHz, 10.130 MHz)
-- **Ionospheric Analysis**: Figs 22-27 (foF2 critical frequency analysis)
-- **Standardized 2x2 layouts** with consistent positioning
-- **NVIS frequency band analysis** for wildlife monitoring optimization
-- **Professional formatting** ready for scientific publication
+## Earlier material
 
-## 🔧 Key Features
-- **Field-Tested NVIS Communication**: Real-world Borneo rainforest deployment
-- **Ionospheric foF2 Analysis**: Multi-year comparative studies (2017-2023)
-- **Wildlife Monitoring Focus**: Optimized for remote conservation applications
-- **Standardized Layout Enforcer**: Ensures consistent chart positioning
-- **Multi-Station Analysis**: Guam and Darwin ionospheric monitoring
-- **Portable Codebase**: Relative paths work on any system
+The existing `analysis/`, `generators/`, `automation/`, `core/`, `utilities/`, `system_monitoring/` and root-level spreadsheet/chart files are retained as earlier research material. Use the dated supplement above for the current manuscript's numerical results. The earlier reception release is preserved, with a [current-analysis pointer](data/reconstructed_trials_2026-10-05/CURRENT_ANALYSIS.txt).
 
-See `SCRIPT_DEPENDENCY_MAP.md` for detailed file relationships.
-
-## 🌍 Research Context
-This work supports remote wildlife monitoring in the Borneo rainforest at the Danau Girang Field Centre (DGFC), Malaysia. The study evaluates NVIS communication effectiveness for conservation applications in challenging tropical environments.
-
-## 📞 Support
-For issues or questions:
-- Open an issue on [GitHub](https://github.com/butterworthma/BearWave-Paper2/issues)
-- Refer to the documentation in the `docs/` directory
-
-## 🔗 Repository Links
-- **GitHub Repository:** [https://github.com/butterworthma/BearWave-Paper2](https://github.com/butterworthma/BearWave-Paper2)
-- **Clone Repository:** `git clone https://github.com/butterworthma/BearWave-Paper2.git`
-
-## 📄 Citation
-**"Evaluating NVIS for Remote Wildlife Monitoring: A Field Trial in the Borneo Rainforest"**
-*PhD Research - Cardiff University*
+The current manuscript is being edited separately in Overleaf; this update publishes supporting research material rather than an outdated manuscript copy. For an immutable reference, use a GitHub commit permalink for the supplement. The repository does not grant an additional licence over third-party source material; retain its attribution and applicable terms.

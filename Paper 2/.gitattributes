@@ -1,0 +1,3 @@
+# Preserve exact bytes for SHA-256-verified research files on every platform.
+data/reconstructed_trials_2026-10-05/** -text
+field_documentation/** -text
